@@ -1,0 +1,152 @@
+{
+  "Python Programming": {
+    "definition": "Variables, loops, arrays, functions, and standard file operations in Python.",
+    "objectives": [
+      "Write scripts with conditionals and loops.",
+      "Use lists and dictionaries.",
+      "Define functions and handle errors."
+    ],
+    "practice": "Write a script that parses a CSV file and calculates column sums.",
+    "checkpoint": "What is the difference between a list and a tuple in Python?"
+  },
+  "SQL Fundamentals": {
+    "definition": "Querying relational databases using SELECT, filtering, grouping, and inner joins.",
+    "objectives": [
+      "Write SELECT and WHERE filter queries.",
+      "Perform GROUP BY aggregates.",
+      "Use INNER JOINs to link tables."
+    ],
+    "practice": "Write a query to join Customers and Orders tables and sum order totals.",
+    "checkpoint": "Explain the difference between WHERE and HAVING clauses."
+  },
+  "API Integration": {
+    "definition": "Sending HTTP queries (GET, POST) and handling JSON responses.",
+    "objectives": [
+      "Understand client-server REST paradigms.",
+      "Inspect HTTP status codes.",
+      "Send fetch requests and process JSON."
+    ],
+    "practice": "Write a Python script that calls a public API and prints specific properties.",
+    "checkpoint": "What does a 404 HTTP status code indicate?"
+  },
+  "Git Basics": {
+    "definition": "Version control workflows: commit, push, branch, and merge operations.",
+    "objectives": [
+      "Initialize repositories.",
+      "Commit changes and push to GitHub.",
+      "Create branches and resolve conflicts."
+    ],
+    "practice": "Create a repository, add a script, create a branch, merge it, and push to GitHub.",
+    "checkpoint": "What does 'git merge' do?"
+  },
+  "Excel Advanced": {
+    "definition": "Advanced spreadsheet parsing: VLOOKUP, pivot tables, and aggregations.",
+    "objectives": [
+      "Use VLOOKUP and XLOOKUP formulas.",
+      "Generate interactive pivot tables.",
+      "Clean messy data using formulas."
+    ],
+    "practice": "Build a sales summary pivot table analyzing monthly regional revenue.",
+    "checkpoint": "What formula replaces VLOOKUP in modern Excel spreadsheets?"
+  },
+  "CSS Layouts": {
+    "definition": "Styling responsive visual structures using Flexbox and CSS Grid.",
+    "objectives": [
+      "Construct grid layouts.",
+      "Apply flex direction and alignments.",
+      "Build responsive media query styles."
+    ],
+    "practice": "Build a responsive grid layout for a photo gallery.",
+    "checkpoint": "What is the difference between justify-content and align-items?"
+  },
+  "Prompt Engineering": {
+    "definition": "Applying prompting design strategies like zero-shot, few-shot, and chain-of-thought.",
+    "objectives": [
+      "Write instructions to direct LLM response schemas.",
+      "Apply few-shot examples.",
+      "Mitigate model hallucinations."
+    ],
+    "practice": "Design a system prompt that forces the model to reply strictly in valid JSON.",
+    "checkpoint": "What is chain-of-thought prompting?"
+  },
+  "LLM Basics": {
+    "definition": "Transformer models, tokenizers, parameter weights, and token windows.",
+    "objectives": [
+      "Understand tokenization and context boundaries.",
+      "Compare different transformer weights.",
+      "Configure temperature parameters."
+    ],
+    "practice": "Test how temperature configurations alter response outputs on identical prompts.",
+    "checkpoint": "What happens when you exceed a model's token context window?"
+  },
+  "Docker Basics": {
+    "definition": "Containerizing server apps using Dockerfiles and container layers.",
+    "objectives": [
+      "Write a clean Dockerfile.",
+      "Build and run container images.",
+      "Map ports and environment variables."
+    ],
+    "practice": "Containerize a simple script and run it inside a Docker container.",
+    "checkpoint": "What does the EXPOSE directive do in a Dockerfile?"
+  },
+  "FastAPI Server": {
+    "definition": "Building API routing endpoints and validation schemas with FastAPI and Pydantic.",
+    "objectives": [
+      "Create HTTP GET and POST endpoints.",
+      "Validate client payloads with Pydantic.",
+      "Manage database sessions."
+    ],
+    "practice": "Build a FastAPI server with a single CRUD routing endpoint for catalog items.",
+    "checkpoint": "What Python library does FastAPI use to validate request data?"
+  },
+  "React Hooks": {
+    "definition": "State and lifecycle management in React using useState and useEffect hooks.",
+    "objectives": [
+      "Manage functional component states.",
+      "Implement side effects and cleanups.",
+      "Pass properties down component graphs."
+    ],
+    "practice": "Build a stateful React stopwatch component tracking milliseconds.",
+    "checkpoint": "When does the useEffect hook run if its dependency array is empty?"
+  },
+  "RAG Systems": {
+    "definition": "Retrieval Augmented Generation pipelines linking document loaders and vector indexing.",
+    "objectives": [
+      "Load and chunk large documents.",
+      "Generate semantic embeddings.",
+      "Query vector indexes and pass context to LLMs."
+    ],
+    "practice": "Build a CLI-based script that loads a PDF, indexes chunks, and queries it.",
+    "checkpoint": "Why is document chunk overlap important in RAG pipelines?"
+  },
+  "LangGraph Agentic Flows": {
+    "definition": "Orchestrating multi-agent state machines and loops using LangGraph.",
+    "objectives": [
+      "Model agent pipelines as graphs.",
+      "Manage state across multi-turn runs.",
+      "Incorporate human validation checks."
+    ],
+    "practice": "Build a LangGraph pipeline with a Router node that escalates to human checks.",
+    "checkpoint": "What are nodes and edges in LangGraph workflows?"
+  },
+  "Model Deployment": {
+    "definition": "Serving deep learning models as web endpoints with scalability.",
+    "objectives": [
+      "Deploy models behind inference endpoints.",
+      "Configure GPU resources.",
+      "Scale inference APIs."
+    ],
+    "practice": "Deploy a model inside a container and run mock inference calls.",
+    "checkpoint": "What is the benefit of model quantization during deployment?"
+  },
+  "Kubernetes Clusters": {
+    "definition": "Orchestrating container fleets with pods, deployments, and services.",
+    "objectives": [
+      "Write pod deployment manifests.",
+      "Configure replica sets and scaling.",
+      "Manage container ingress paths."
+    ],
+    "practice": "Write a deployment manifest serving a static server container.",
+    "checkpoint": "What is a Pod in Kubernetes terminology?"
+  }
+}

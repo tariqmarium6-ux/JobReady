@@ -1,0 +1,222 @@
+{
+  "Artificial Intelligence": {
+    "name": "Artificial Intelligence",
+    "desc": "Build reasoning, problem-solving systems using deep logic and cognitive frameworks.",
+    "difficulty": "Intermediate to Advanced",
+    "outlook": "Strategic Industry Priority",
+    "tags": [
+      "Reasoning",
+      "Cognitive",
+      "Logic"
+    ]
+  },
+  "Agentic AI": {
+    "name": "Agentic AI",
+    "desc": "Design and coordinate autonomous AI agents, multi-agent systems, and workflow engines.",
+    "difficulty": "Intermediate",
+    "outlook": "Leading-Edge Growth",
+    "tags": [
+      "Agents",
+      "Autonomy",
+      "Workflows"
+    ]
+  },
+  "Machine Learning": {
+    "name": "Machine Learning",
+    "desc": "Train models on structured/unstructured datasets to recognize patterns and make predictions.",
+    "difficulty": "Intermediate",
+    "outlook": "Steady High Demand",
+    "tags": [
+      "Modeling",
+      "Statistics",
+      "Algorithms"
+    ]
+  },
+  "Deep Learning": {
+    "name": "Deep Learning",
+    "desc": "Construct and tune deep neural network architectures for visual, voice, and token processing.",
+    "difficulty": "Advanced",
+    "outlook": "High Demand / Specialist",
+    "tags": [
+      "Neural Networks",
+      "GPU Tuning",
+      "Transformers"
+    ]
+  },
+  "Large Language Models": {
+    "name": "Large Language Models",
+    "desc": "Fine-tune, orchestrate, evaluate, and scale massive transformer architectures.",
+    "difficulty": "Intermediate",
+    "outlook": "Extremely High Demand",
+    "tags": [
+      "LLMs",
+      "Tuning",
+      "Orchestration"
+    ]
+  },
+  "Natural Language Processing": {
+    "name": "Natural Language Processing",
+    "desc": "Process, interpret, and translate human text and voice datasets using semantic pipelines.",
+    "difficulty": "Intermediate",
+    "outlook": "Core Technology Stack",
+    "tags": [
+      "NLP",
+      "Semantics",
+      "Text Mining"
+    ]
+  },
+  "Computer Vision": {
+    "name": "Computer Vision",
+    "desc": "Build systems that classify, segment, and track visual feeds and image data.",
+    "difficulty": "Intermediate to Advanced",
+    "outlook": "Growing Demand",
+    "tags": [
+      "Images",
+      "Segmentation",
+      "Tracking"
+    ]
+  },
+  "Data Science": {
+    "name": "Data Science",
+    "desc": "Extract meaningful insights from raw datasets using scientific computing and models.",
+    "difficulty": "Intermediate",
+    "outlook": "Stable High Demand",
+    "tags": [
+      "Analytics",
+      "Modeling",
+      "R"
+    ]
+  },
+  "Data Analytics": {
+    "name": "Data Analytics",
+    "desc": "Clean and transform data to build interactive dashboards and support business choices.",
+    "difficulty": "Beginner",
+    "outlook": "Entry-Level Friendly",
+    "tags": [
+      "Excel",
+      "Tableau",
+      "SQL"
+    ]
+  },
+  "Data Engineering": {
+    "name": "Data Engineering",
+    "desc": "Build scalable storage solutions, database servers, and orchestrate pipelines.",
+    "difficulty": "Intermediate",
+    "outlook": "Critical System Need",
+    "tags": [
+      "Pipelines",
+      "Spark",
+      "Postgres"
+    ]
+  },
+  "Software Engineering": {
+    "name": "Software Engineering",
+    "desc": "Design, develop, test, and deploy secure and robust desktop and server applications.",
+    "difficulty": "Beginner to Intermediate",
+    "outlook": "Universal Demand",
+    "tags": [
+      "Python",
+      "Algorithms",
+      "Git"
+    ]
+  },
+  "Backend Development": {
+    "name": "Backend Development",
+    "desc": "Develop logic, database schemas, and microservice APIs to power application servers.",
+    "difficulty": "Intermediate",
+    "outlook": "High Demand",
+    "tags": [
+      "FastAPI",
+      "API",
+      "Servers"
+    ]
+  },
+  "Frontend Development": {
+    "name": "Frontend Development",
+    "desc": "Create interactive user layouts, web apps, and single-page client scripts.",
+    "difficulty": "Beginner",
+    "outlook": "High Demand",
+    "tags": [
+      "HTML",
+      "CSS",
+      "React"
+    ]
+  },
+  "Full Stack Development": {
+    "name": "Full Stack Development",
+    "desc": "Develop both frontend visual layouts and backend database/server layers.",
+    "difficulty": "Intermediate",
+    "outlook": "High Demand / Versatile",
+    "tags": [
+      "React",
+      "FastAPI",
+      "FullStack"
+    ]
+  },
+  "Mobile Development": {
+    "name": "Mobile Development",
+    "desc": "Build native and cross-platform mobile apps for Android and iOS systems.",
+    "difficulty": "Intermediate",
+    "outlook": "In Demand",
+    "tags": [
+      "iOS",
+      "Android",
+      "UI Design"
+    ]
+  },
+  "Cloud Computing": {
+    "name": "Cloud Computing",
+    "desc": "Architect, scale, and secure virtualized infrastructure and cloud microservices.",
+    "difficulty": "Intermediate",
+    "outlook": "High Demand",
+    "tags": [
+      "AWS",
+      "Cloud",
+      "Scaling"
+    ]
+  },
+  "DevOps": {
+    "name": "DevOps",
+    "desc": "Automate code compilation, continuous delivery (CI/CD) pipelines, and container clouds.",
+    "difficulty": "Intermediate",
+    "outlook": "System Critical",
+    "tags": [
+      "CI/CD",
+      "Docker",
+      "Automation"
+    ]
+  },
+  "Site Reliability Engineering": {
+    "name": "Site Reliability Engineering",
+    "desc": "Apply software engineering to automate system operations and maximize uptime.",
+    "difficulty": "Advanced",
+    "outlook": "High Pay / High Demand",
+    "tags": [
+      "Uptime",
+      "SRE",
+      "Kubernetes"
+    ]
+  },
+  "Cybersecurity": {
+    "name": "Cybersecurity",
+    "desc": "Protect server networks, applications, and operating systems from attacks and breaches.",
+    "difficulty": "Intermediate",
+    "outlook": "Critical Security Need",
+    "tags": [
+      "Security",
+      "Network",
+      "Pentesting"
+    ]
+  },
+  "UI/UX Design": {
+    "name": "UI/UX Design",
+    "desc": "Analyze user behavior, design mockups, and build visual layout workflows.",
+    "difficulty": "Beginner",
+    "outlook": "In Demand",
+    "tags": [
+      "Figma",
+      "UI",
+      "UX"
+    ]
+  }
+}

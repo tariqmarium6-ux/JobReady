@@ -1,0 +1,2467 @@
+{
+  "Python": {
+    "definition": "Core language syntax, data structures, and scripting concepts.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 40,
+    "prerequisites": [],
+    "next_skills": [
+      "FastAPI",
+      "Machine Learning",
+      "Data Science"
+    ],
+    "related_skills": [
+      "Python",
+      "SQL",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Researcher",
+      "AI Solutions Engineer",
+      "Autonomous Systems Specialist",
+      "AI Workflow Engineer",
+      "Multi-Agent Systems Engineer",
+      "Enterprise Agent Developer",
+      "RPA AI Specialist",
+      "Feature Store Specialist",
+      "ML Research Scientist",
+      "Vision DL Architect",
+      "LLM Developer",
+      "LLM Evaluation Specialist",
+      "Prompt Engineer",
+      "RAG Engineer",
+      "NLP Engineer"
+    ],
+    "projects_using_skill": [
+      "repository/week1_data_analysis/data_exploration_notebook.ipynb",
+      "a Python code snippet demonstrating LLM-based chatbot using the Transformers library",
+      "a Python code snippet demonstrating a basic MARL environment and agent",
+      "a Python code snippet demonstrating a basic multi-agent system design and development",
+      "Simple text classification model implementation in Python",
+      "Commit a Python script that implements a supervised learning algorithm using Scikit-learn",
+      "Commit a Python script that preprocesses a large dataset using Pandas and NumPy",
+      "Commit a Python script that evaluates and optimizes an ML model using Scikit-learn and Pandas",
+      "Commit a Python script that explains and interprets an ML model using SHAP and LIME",
+      "Commit a Python script that deploys and maintains an ML model using TensorFlow and Kubernetes"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "JavaScript": {
+    "definition": "Web scripting syntax, DOM operations, ES6 features, and asynchronous execution loops.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 35,
+    "prerequisites": [],
+    "next_skills": [
+      "TypeScript",
+      "React",
+      "Node.js"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Backend Developer",
+      "Frontend Developer",
+      "Application Developer",
+      "UI Developer",
+      "SPA Developer",
+      "Web Designer",
+      "Component Library Maintainer",
+      "Full Stack Web Developer",
+      "React Native Developer"
+    ],
+    "projects_using_skill": [
+      "Create a new JavaScript file named `calculator.js` in their GitHub repository, and commit it with a meaningful commit message",
+      "Create a new JavaScript file named `api.js` in their GitHub repository, and commit it with a meaningful commit message",
+      "A 'js-todo-list-logic/' directory with `script.js` demonstrating the core logic, and `README.md` explaining the implementation.",
+      "repository_root/calculator.js",
+      "Repository: `js-utilities-library` containing utility functions and an `index.html` with `script.js` demonstrating their use.",
+      "Create a GitHub repository with a basic HTML, CSS, and JavaScript project",
+      "week9-theming-panel/index.html, week9-theming-panel/style.css, week9-theming-panel/script.js",
+      "A GitHub repository containing a simple web page with HTML, CSS, and JavaScript code",
+      "repository/week2-js-quiz-app/script.js, repository/week2-js-quiz-app/index.html",
+      "A GitHub repository with a design system implemented using HTML/CSS/JavaScript"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "TypeScript": {
+    "definition": "Static typing extension for JavaScript, compiler configurations, interfaces, generics, and strict checks.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 20,
+    "prerequisites": [
+      "JavaScript"
+    ],
+    "next_skills": [
+      "React",
+      "Angular",
+      "Next.js"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Frontend Engineer",
+      "SaaS Developer",
+      "React Native Developer"
+    ],
+    "projects_using_skill": [
+      "repository_root/react-blog/tsconfig.json, repository_root/react-blog/src/types.ts, repository_root/react-blog/src/components/PostCard.tsx"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Go": {
+    "definition": "Compiled systems programming language, goroutines concurrency, channels, and strict structural typing.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [],
+    "next_skills": [
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Researcher",
+      "Agentic AI Developer",
+      "ML Research Scientist",
+      "MLOps Automation Lead",
+      "Compute Resource Allocator",
+      "LLM Evaluation Specialist",
+      "Semantic Search Specialist",
+      "NLP Researcher",
+      "Computer Vision Engineer",
+      "Perception Engineer",
+      "Spatial Processing Developer",
+      "Quantitative Analyst",
+      "Data Warehouse Architect",
+      "FastAPI Developer",
+      "Web Designer"
+    ],
+    "projects_using_skill": [
+      "A deployed large-scale AI system on Google Cloud AI Platform",
+      "repository/week1_data_analysis/data_exploration_notebook.ipynb",
+      "repository/week12_responsible_ai/ai_bias_report.md",
+      "Ethical_AI_Assessment_Report.pdf",
+      "Commit a simple machine learning model to GitHub",
+      "A TensorFlow or PyTorch implementation of a goal-oriented reinforcement learning agent.",
+      "a Python code snippet demonstrating a basic MARL environment and agent",
+      "Commit a Python script that implements a supervised learning algorithm using Scikit-learn",
+      "week7_feature_governance_proposal.md",
+      "A repository with a deployed machine learning model on Google Cloud AI Platform"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Java": {
+    "definition": "Object-oriented language compiling to bytecode running on JVM, enterprise designs, and strict hierarchies.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 45,
+    "prerequisites": [],
+    "next_skills": [
+      "Spring Boot",
+      "Android Development"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "RPA AI Specialist",
+      "Frontend Developer",
+      "Software Engineer",
+      "Application Developer",
+      "UI Developer",
+      "SPA Developer",
+      "Component Library Maintainer",
+      "Full Stack Web Developer",
+      "React Native Developer"
+    ],
+    "projects_using_skill": [
+      "commit a Java script implementing Elasticsearch",
+      "commit a Java script implementing caching and indexing optimizations",
+      "Create a new JavaScript file named `calculator.js` in their GitHub repository, and commit it with a meaningful commit message",
+      "Create a new JavaScript file named `api.js` in their GitHub repository, and commit it with a meaningful commit message",
+      "A 'js-todo-list-logic/' directory with `script.js` demonstrating the core logic, and `README.md` explaining the implementation.",
+      "repository_root/calculator.js",
+      "Repository: `js-utilities-library` containing utility functions and an `index.html` with `script.js` demonstrating their use.",
+      "Create a GitHub repository with a basic HTML, CSS, and JavaScript project",
+      "week9-theming-panel/index.html, week9-theming-panel/style.css, week9-theming-panel/script.js",
+      "A GitHub repository containing a simple web page with HTML, CSS, and JavaScript code"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "C++": {
+    "definition": "Low-level system programming language, memory pointers, templates, and performance-critical compilers.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 60,
+    "prerequisites": [],
+    "next_skills": [
+      "Game Engine Development",
+      "Hardware Drivers"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Multi-Agent Systems Engineer"
+    ],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Rust": {
+    "definition": "Safe systems language featuring zero-cost abstractions, borrow checker memory security, and async streams.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 50,
+    "prerequisites": [],
+    "next_skills": [
+      "WebAssembly",
+      "Safe System Kernels"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "LLM Security Auditor"
+    ],
+    "projects_using_skill": [
+      "week10_ti_script.py (Python script with example input file and output) and week10_ioc_analysis.md (Summary of findings from public TIPs during practice).",
+      "repository_root/week9/malware_analysis_report.md",
+      "PDF document: 'User_Interview_Notes.pdf' and 'User_Personas_Empathy_Maps.pdf'",
+      "Week_01_UX_Analysis_Report.pdf (or .md with screenshots and text)"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "HTML/CSS": {
+    "definition": "Markup layout structure, responsive grids, flexbox coordinates, animations, and semantic structure.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 20,
+    "prerequisites": [],
+    "next_skills": [
+      "JavaScript",
+      "Tailwind CSS",
+      "Figma"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "A GitHub repository with a design system implemented using HTML/CSS/JavaScript",
+      "repository/docker-static-site/Dockerfile, index.html"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "SQL": {
+    "definition": "Querying relational databases, structuring filters, aggregate grouping, and table joins.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 30,
+    "prerequisites": [],
+    "next_skills": [
+      "Data Engineering",
+      "PostgreSQL Administration"
+    ],
+    "related_skills": [
+      "Python",
+      "SQL",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Solutions Engineer",
+      "Data Scientist",
+      "BI Developer",
+      "Marketing Analyst",
+      "Postgres Administrator"
+    ],
+    "projects_using_skill": [
+      "repository/week10_data_engineering/etl_pipeline_script.py and sql_schema.sql",
+      "repository/week5_sql_fundamentals/ecommerce_queries.sql",
+      "week1_movie_rental_schema.sql (containing DDL and DML for project) and week1_queries.sql",
+      "week2_advanced_queries.sql",
+      "week3_course_enrollment_normalized_schema.sql",
+      "week5_inventory_physical_schema.sql",
+      "week7_sales_dimensional_model.sql (DDL for schema with SCD Type 2 example) and week7_sales_dimensional_model_erd.pdf",
+      "week9_performance_optimization.sql (DDL for partitioning and indexing)",
+      "week10_blog_nosql_model.json (with design choices explanation)",
+      "week11_cloud_data_model_ddl.sql (with comments for cloud-specific features)"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Bash Scripting": {
+    "definition": "Linux shell script automation, pipe filters, environment properties, and command-line schedules.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [],
+    "next_skills": [
+      "Docker",
+      "Linux Shell"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Site Reliability Engineer",
+      "Infrastructure Developer"
+    ],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Git": {
+    "definition": "Version control systems, commits, branching, merging, and pull request collaborations.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [],
+    "next_skills": [
+      "Docker",
+      "CI/CD"
+    ],
+    "related_skills": [
+      "Python",
+      "SQL",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Solutions Engineer",
+      "Compute Resource Allocator",
+      "CV Quality Analyst",
+      "Data Scientist",
+      "Software Engineer",
+      "Git Operations Lead",
+      "API Developer",
+      "Python Server Developer",
+      "Frontend Engineer",
+      "SPA Developer",
+      "CSS Architect",
+      "Full-Stack AI Developer",
+      "Android Developer",
+      "React Native Developer",
+      "Mobile UI Builder"
+    ],
+    "projects_using_skill": [
+      "A GitHub repository containing the supervised learning implementation and recommendation system project",
+      "A GitHub repository containing the CNN implementation and image classification project",
+      "A GitHub repository containing the NLP implementation and chatbot project",
+      "A GitHub repository containing the transfer learning implementation and image classification project",
+      "A GitHub repository containing the deployment implementation and cloud-based AI application project",
+      "A basic neural network implementation in TensorFlow",
+      "repository/week3_deep_learning_intro/fashion_mnist_classifier.ipynb and ann_model.h5",
+      "repository/week8_mlops_deployment/sentiment_api/ and Dockerfile, .github/workflows/deploy.yml",
+      "Commit a simple machine learning model to GitHub",
+      "Commit an autonomous system to GitHub"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "FastAPI": {
+    "definition": "Building high-performance RESTful APIs, request payloads routing, and data validation via Pydantic.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 25,
+    "prerequisites": [
+      "Python",
+      "Git"
+    ],
+    "next_skills": [
+      "Backend Security",
+      "SaaS Deployments"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Solutions Engineer",
+      "FastAPI Developer",
+      "Python Server Developer",
+      "Full-Stack AI Developer"
+    ],
+    "projects_using_skill": [
+      "repository/week8_mlops_deployment/sentiment_api/ and Dockerfile, .github/workflows/deploy.yml",
+      "langchain-rag-chatbot/langchain_chatbot.py",
+      "rag-deployment/fastapi_rag_docker/",
+      "domain-specific-rag-app/",
+      "repository/week15_mlops_deployment/churn_prediction_api_docker/",
+      "A GitHub repository with a FastAPI application",
+      "A README file describing the use of Python data structures",
+      "A GitHub repository with a deployed FastAPI application",
+      "A README file describing the system design",
+      "repository/fastapi_url_shortener/main.py"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Node.js": {
+    "definition": "Asynchronous event-driven JavaScript server runtime environment, package registry, and server clustering.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "JavaScript"
+    ],
+    "next_skills": [
+      "Express",
+      "GraphQL"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Backend Developer",
+      "Full Stack Developer",
+      "Backend Engineer",
+      "Full Stack Web Developer",
+      "Figma-to-Code Developer"
+    ],
+    "projects_using_skill": [
+      "A GitHub repository with a simple Node.js application",
+      "A GitHub repository with a containerized Node.js application",
+      "A GitHub repository with a cloud-based monitoring and logging system",
+      "A GitHub repository containing a simple RESTful API using Node.js and Express",
+      "A GitHub repository containing a cloud-ready web application using Node.js, Express, and MongoDB",
+      "repository/week9-library-db/schema.sql, repository/week9-library-db/data.sql",
+      "repository/week14-project-mgmt-app/Dockerfile.frontend, repository/week14-project-mgmt-app/Dockerfile.backend, repository/week14-project-mgmt-app/docker-compose.yml",
+      "A Node.js web server repository on GitHub",
+      "A user authentication system repository on GitHub",
+      "A full stack web application repository on GitHub"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Express": {
+    "definition": "Minimalist server routing framework for Node.js, middleware pipelines, and API integrations.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Node.js"
+    ],
+    "next_skills": [
+      "GraphQL",
+      "Microservices"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Full Stack Web Developer"
+    ],
+    "projects_using_skill": [
+      "An 'express-blog-api-inmemory/' directory with `server.js` (or `app.js`), `package.json`, and a `README.md` detailing the API endpoints.",
+      "An 'express-blog-api-postgres/' directory containing `server.js`, a `database.sql` file (for schema and initial data), `package.json`, and a `README.md`.",
+      "An 'express-authenticated-blog-api/' directory with updated `server.js`, a new `authController.js` (or similar), database schema changes for users, and a `README.md`.",
+      "An 'express-product-reviews-api-mongodb/' directory with `server.js`, `models/Review.js`, `package.json`, and a `README.md` explaining the API.",
+      "A 'full-stack-blog-app-deployed/' repository with separate `client/` (React) and `server/` (Express) folders, and a `README.md` including deployment links.",
+      "A 'full-stack-blog-app-optimized/' repository with a `.github/workflows/ci.yml` (CI/CD config), updated React code for lazy loading, and potentially updated Express code for caching/indexing, and an updated `README.md`.",
+      "A GitHub repository with a simple Node.js application",
+      "A GitHub repository containing a simple RESTful API using Node.js and Express",
+      "A GitHub repository containing a cloud-ready web application using Node.js, Express, and MongoDB",
+      "repository/week10-inventory-api/models/Product.js, repository/week10-inventory-api/migrations/"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Django": {
+    "definition": "High-level model-view-template Python web framework featuring built-in admin panels and ORM databases.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 35,
+    "prerequisites": [
+      "Python"
+    ],
+    "next_skills": [
+      "Fullstack Web Integration",
+      "SaaS Grid"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "repository/docker-portfolio/webapp-compose/Dockerfile, docker-compose.yml"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Spring Boot": {
+    "definition": "Opinionated Java framework for production-grade microservices, dependency injection, and JPA database mapping.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 40,
+    "prerequisites": [
+      "Java"
+    ],
+    "next_skills": [
+      "Enterprise Microservices Grid"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "A RESTful API implementation with Spring Boot and database integration in a GitHub repository."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "GraphQL": {
+    "definition": "Declarative API query language, type definitions schemas, mutations, and server-side resolvers mapping.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 20,
+    "prerequisites": [
+      "JavaScript",
+      "REST APIs"
+    ],
+    "next_skills": [
+      "Apollo Client",
+      "API Gateway Networks"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "repository/week8-movie-graphql-api/schema.py and app.py."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "REST APIs": {
+    "definition": "Representational State Transfer network architectures, standard CRUD methods, and HTTP status codes.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [],
+    "next_skills": [
+      "FastAPI",
+      "GraphQL",
+      "gRPC"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "gRPC": {
+    "definition": "High-performance Remote Procedure Call framework using protocol buffers serialization and HTTP/2 channels.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 25,
+    "prerequisites": [
+      "Go",
+      "C++",
+      "REST APIs"
+    ],
+    "next_skills": [
+      "Microservices Coordination"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "React": {
+    "definition": "Component architecture, virtual DOM updates, useState/useEffect lifecycle hooks, and single-page apps states.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 35,
+    "prerequisites": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "next_skills": [
+      "Next.js",
+      "Fullstack Integration"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "React Web Developer",
+      "Web Designer",
+      "Component Library Maintainer",
+      "React Native Developer"
+    ],
+    "projects_using_skill": [
+      "Create a repository with a Python script that demonstrates a simple LLM implementation and a prompt design using Hugging Face Transformers",
+      "Create a repository with a Python script that demonstrates model pruning and quantization using TensorFlow Lite",
+      "Create a repository with a Python script that demonstrates model deployment using TensorFlow Serving",
+      "Create a new React component named `Header.js` in their GitHub repository, and commit it with a meaningful commit message",
+      "A 'react-recipe-finder/' directory containing the React project files (e.g., `src/components/RecipeList.js`, `src/App.js`) and a `README.md`.",
+      "A 'react-blog-viewer/' directory with a multi-page React application, including `src/pages/HomePage.js`, `src/pages/PostDetailPage.js`, `src/App.js` configured with routing, and a `README.md`.",
+      "A 'full-stack-blog-app-deployed/' repository with separate `client/` (React) and `server/` (Express) folders, and a `README.md` including deployment links.",
+      "A 'full-stack-blog-app-tested/' repository with `__tests__/` directories for both client and server, demonstrating test coverage, and a `README.md` updated with testing instructions.",
+      "A 'full-stack-blog-app-optimized/' repository with a `.github/workflows/ci.yml` (CI/CD config), updated React code for lazy loading, and potentially updated Express code for caching/indexing, and an updated `README.md`.",
+      "repository_root/react-portfolio/src/components/ProjectCard.jsx, repository_root/react-portfolio/src/App.jsx"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Next.js": {
+    "definition": "React framework enabling server-side rendering, static generation, API routes, and optimized client layouts.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 25,
+    "prerequisites": [
+      "React",
+      "TypeScript"
+    ],
+    "next_skills": [
+      "Vercel Deployment",
+      "Incremental Static Regeneration"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "portfolio-nextjs/src/app/page.tsx, portfolio-nextjs/src/components/Header.tsx",
+      "blog-app/frontend/src/app/posts/page.tsx, blog-app/backend/main.py",
+      "dockerized-qa-app/Dockerfile, dockerized-qa-app/docker-compose.yml"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Tailwind CSS": {
+    "definition": "Utility-first CSS framework providing speed classes, responsive configurations, and custom design tokens.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 10,
+    "prerequisites": [
+      "HTML/CSS"
+    ],
+    "next_skills": [
+      "React UI Components"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "Repository: `react-styled-blog-ui` demonstrating modern styling and UI library usage with responsive design."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Vue": {
+    "definition": "Progressive JavaScript framework for user interfaces featuring easy directives and reactive virtual DOM.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "next_skills": [
+      "Nuxt.js"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Angular": {
+    "definition": "Comprehensive enterprise TypeScript framework featuring built-in routers, components, and HTTP client modules.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 40,
+    "prerequisites": [
+      "TypeScript"
+    ],
+    "next_skills": [
+      "RxJS Advanced State Management"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Web Designer",
+      "Component Library Maintainer"
+    ],
+    "projects_using_skill": [
+      "Create a repository with a Python script that demonstrates a simple LLM implementation and a prompt design using Hugging Face Transformers",
+      "Create a repository with a Python script that demonstrates model pruning and quantization using TensorFlow Lite",
+      "Create a repository with a Python script that demonstrates model deployment using TensorFlow Serving",
+      "Simple-Angular-Menu"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Redux": {
+    "definition": "Predictable state container for JavaScript apps featuring centralized store, actions, and reducer functions.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 20,
+    "prerequisites": [
+      "React"
+    ],
+    "next_skills": [
+      "RTK Query"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Webpack": {
+    "definition": "JavaScript bundler, asset loaders compilation, source mapping, and production compilation optimizations.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "JavaScript"
+    ],
+    "next_skills": [
+      "Vite Speed Configurations"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Machine Learning": {
+    "definition": "Training algorithms on datasets to classify inputs, regress values, or segment clusters.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 40,
+    "prerequisites": [
+      "Python",
+      "SQL"
+    ],
+    "next_skills": [
+      "Deep Learning",
+      "Data Engineering"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Cognitive Systems Architect",
+      "AI Ethicist",
+      "Applied AI Engineer",
+      "AI Automation Engineer",
+      "Multi-Agent Systems Engineer",
+      "Machine Learning Engineer",
+      "Applied ML Engineer",
+      "Feature Store Specialist",
+      "ML Research Scientist",
+      "ML Pipeline Developer",
+      "Model Optimization Engineer",
+      "ML Platform Engineer",
+      "MLOps Automation Lead",
+      "GPU Tuning Engineer",
+      "Context Optimization Engineer"
+    ],
+    "projects_using_skill": [
+      "repository/week1_data_analysis/data_exploration_notebook.ipynb",
+      "repository/week2_ml_pipeline/churn_prediction_notebook.ipynb and trained_model.pkl",
+      "ML_Use_Case_Explorer_Document.pdf",
+      "Commit a simple machine learning model to GitHub",
+      "A machine learning model implementation for a specific business application",
+      "Share a link to your implemented machine learning model, upload a screenshot of your chatbot",
+      "Commit the machine learning application and pitch code to a GitHub repository",
+      "Create a repository with a Python script that demonstrates a distributed computing pipeline using PySpark",
+      "A repository with a deployed machine learning model on Google Cloud AI Platform",
+      "A repository with a preprocessed dataset and a basic machine learning model"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Deep Learning": {
+    "definition": "Multi-layer artificial neural networks, backpropagation math, gradient descent tuning, and image/text models.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 45,
+    "prerequisites": [
+      "Machine Learning"
+    ],
+    "next_skills": [
+      "NLP",
+      "Computer Vision",
+      "RAG Systems"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Applied AI Engineer",
+      "Deep Learning Engineer",
+      "Neural Networks Specialist",
+      "GPU Tuning Engineer",
+      "DL Research Scientist",
+      "Vision DL Architect",
+      "Transformer Engineer",
+      "Compute Resource Allocator",
+      "Quantization Specialist",
+      "LLM Developer",
+      "Fine-Tuning Specialist",
+      "NLP Engineer",
+      "Image Processing Specialist",
+      "Perception Engineer",
+      "Visual CV Architect"
+    ],
+    "projects_using_skill": [
+      "A GitHub repository containing the CNN implementation and image classification project",
+      "repository/week3_deep_learning_intro/fashion_mnist_classifier.ipynb and ann_model.h5",
+      "repository/week5_nlp_basics/sentiment_analysis_notebook.ipynb",
+      "Deep_Learning_Application_Landscape.pdf",
+      "Create a repository with a Python script that demonstrates a hyperparameter tuning experiment using scikit-learn",
+      "Create a repository with a Python script that demonstrates model pruning and quantization using TensorFlow Lite",
+      "Create a repository with a Python script that demonstrates model deployment using TensorFlow Serving",
+      "A Python code repository with a deep learning model implementation",
+      "A Python code repository with an advanced deep learning model implementation",
+      "A presentation document with a deep learning application case study"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "PyTorch": {
+    "definition": "Tensor computations framework with autograd, custom neural network modules, and GPU model training acceleration.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "Python",
+      "Machine Learning"
+    ],
+    "next_skills": [
+      "Deep Learning",
+      "Transformer Tuning"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Researcher",
+      "Cognitive Systems Architect",
+      "Applied AI Engineer",
+      "Autonomous Systems Specialist",
+      "AI Workflow Engineer",
+      "AI Integration Engineer",
+      "Enterprise Agent Developer",
+      "Cognitive Flow Architect",
+      "Applied ML Engineer",
+      "ML Pipeline Developer",
+      "Model Optimization Engineer",
+      "ML Platform Engineer",
+      "MLOps Automation Lead",
+      "Neural Networks Specialist",
+      "GPU Tuning Engineer"
+    ],
+    "projects_using_skill": [
+      "A PyTorch code implementing a basic neural network",
+      "A PyTorch code implementing a CNN-based image classifier",
+      "A PyTorch code implementing an RNN-based text generator",
+      "A PyTorch code implementing self-attention in a sequence model",
+      "A PyTorch code implementing an RL agent",
+      "Implementation of a simple neural network using PyTorch or TensorFlow",
+      "PyTorch script implementing image classification",
+      "PyTorch script implementing object detection using a pre-trained model",
+      "PyTorch script implementing a basic chatbot using a pre-trained language model",
+      "A TensorFlow or PyTorch implementation of a goal-oriented reinforcement learning agent."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "TensorFlow": {
+    "definition": "End-to-end open-source machine learning platform with Keras, computational graphs, and TPU training loops.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "Python",
+      "Machine Learning"
+    ],
+    "next_skills": [
+      "Deep Learning",
+      "TF Extended"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Researcher",
+      "Cognitive Systems Architect",
+      "Applied AI Engineer",
+      "Autonomous Systems Specialist",
+      "AI Workflow Engineer",
+      "AI Integration Engineer",
+      "Enterprise Agent Developer",
+      "Cognitive Flow Architect",
+      "Applied ML Engineer",
+      "ML Pipeline Developer",
+      "Model Optimization Engineer",
+      "ML Platform Engineer",
+      "MLOps Automation Lead",
+      "Neural Networks Specialist",
+      "GPU Tuning Engineer"
+    ],
+    "projects_using_skill": [
+      "A basic neural network implementation in TensorFlow",
+      "A deployed large-scale AI system on Google Cloud AI Platform",
+      "Implementation of a simple neural network using PyTorch or TensorFlow",
+      "Commit a simple machine learning model to GitHub",
+      "Commit an autonomous system to GitHub",
+      "Commit a computer vision model to GitHub",
+      "Commit a natural language processing model to GitHub",
+      "Commit an autonomous systems integration system to GitHub",
+      "A TensorFlow or PyTorch implementation of a goal-oriented reinforcement learning agent.",
+      "A TensorFlow or PyTorch implementation of a meta-learning model for multitask learning."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Scikit-Learn": {
+    "definition": "Python library for classical ML featuring regressions, classification classifiers, preprocessors, and metric evaluation.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 20,
+    "prerequisites": [
+      "Python"
+    ],
+    "next_skills": [
+      "Machine Learning",
+      "Feature Engineering"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Applied AI Engineer",
+      "Cognitive Flow Architect",
+      "Applied ML Engineer",
+      "Model Optimization Engineer",
+      "ML Platform Engineer",
+      "Text Analytics Engineer",
+      "CV Quality Analyst",
+      "Decision Scientist",
+      "Applied Statistician",
+      "Data Science Lead",
+      "Experimental Designer",
+      "Marketing Analyst"
+    ],
+    "projects_using_skill": [
+      "Commit a Python script that implements a supervised learning algorithm using Scikit-learn",
+      "Commit a Python script that evaluates and optimizes an ML model using Scikit-learn and Pandas",
+      "Create a repository with a Python script that demonstrates a hyperparameter tuning experiment using scikit-learn",
+      "Commit a Python script that trains a simple neural network to their GitHub portfolio"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Pandas": {
+    "definition": "DataFrame manipulation, dataset sorting, data cleaning operations, and aggregate grouping.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Python"
+    ],
+    "next_skills": [
+      "Scikit-Learn",
+      "Data Engineering"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Researcher",
+      "Applied AI Engineer",
+      "CV Quality Analyst",
+      "Experimental Designer",
+      "Data Analyst",
+      "Marketing Analyst"
+    ],
+    "projects_using_skill": [
+      "Commit a Python script that preprocesses a large dataset using Pandas and NumPy",
+      "Commit a Python script that evaluates and optimizes an ML model using Scikit-learn and Pandas",
+      "repository/week2_numpy_pandas_basics/data_operations.ipynb",
+      "repository/week3_pandas_wrangling/data_cleaning_and_merge.ipynb",
+      "Pandas project on GitHub: dataset_summary.py ",
+      "A repository containing cleaned and manipulated data",
+      "Commit a Jupyter Notebook with Pandas example"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "NumPy": {
+    "definition": "Multi-dimensional array computations, vectorization operations, linear algebra solvers, and mathematical operations.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Python"
+    ],
+    "next_skills": [
+      "Pandas",
+      "PyTorch"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Researcher",
+      "Applied AI Engineer",
+      "Neural Networks Specialist",
+      "CV Quality Analyst",
+      "Experimental Designer",
+      "Marketing Analyst"
+    ],
+    "projects_using_skill": [
+      "README.md explaining the use of matrix operations in a simple neural network model",
+      "Commit a Python script that preprocesses a large dataset using Pandas and NumPy",
+      "repository/week2_numpy_pandas_basics/data_operations.ipynb"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Data Engineering": {
+    "definition": "Building data ingestion pipelines, cleaning batch extracts, orchestrating lake schemas, and relational warehouses.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 40,
+    "prerequisites": [
+      "SQL",
+      "Python"
+    ],
+    "next_skills": [
+      "Apache Spark",
+      "Snowflake"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Feature Store Specialist",
+      "ETL Developer"
+    ],
+    "projects_using_skill": [
+      "Create a GitHub repository with a data engineering best practices implementation"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "NLP": {
+    "definition": "Natural Language Processing, tokenizers, transformers sentiment, embeddings models, and language understanding.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 35,
+    "prerequisites": [
+      "Deep Learning"
+    ],
+    "next_skills": [
+      "Prompt Engineering",
+      "RAG Systems"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "NLP Engineer",
+      "Conversational AI Designer",
+      "Semantic Search Specialist",
+      "Computational Linguist",
+      "NLP Researcher",
+      "Text Analytics Engineer",
+      "Speech Processing Engineer",
+      "NLP Database Admin"
+    ],
+    "projects_using_skill": [
+      "A GitHub repository containing the NLP implementation and chatbot project",
+      "repository/week5_nlp_basics/sentiment_analysis_notebook.ipynb",
+      "Mini_NLP_Landscape_Analysis.pdf",
+      "Share a link to your implemented machine learning model, upload a screenshot of your chatbot",
+      "A commit to a GitHub repository with an NLP application implementation",
+      "Commit a simple neural network implementation in PyTorch or TensorFlow to the GitHub portfolio.",
+      "nlp_metric_evaluator.py",
+      "ReinforcementLearningForNLP.ipynb",
+      "Upload a repository with an NLP model implementation",
+      "Upload a repository with an NLP pipeline implementation"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Computer Vision": {
+    "definition": "Image preprocessing, convolutional feature extractors, object segmentation, bounding boxes, and video frames tracking.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 35,
+    "prerequisites": [
+      "Deep Learning"
+    ],
+    "next_skills": [
+      "Diffusion Models",
+      "Robotics Navigation"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "ML Research Scientist",
+      "Deep Learning Engineer",
+      "Neural Networks Specialist",
+      "Vision DL Architect",
+      "Computer Vision Engineer",
+      "Image Processing Specialist",
+      "Perception Engineer",
+      "Visual CV Architect",
+      "Spatial Processing Developer",
+      "CV Optimization Engineer",
+      "Video Analytics Developer",
+      "CV Quality Analyst"
+    ],
+    "projects_using_skill": [
+      "A human-AI collaboration system implementation using natural language processing and computer vision",
+      "Commit a computer vision model to GitHub",
+      "ComputerVision.ipynb",
+      "A commit to a GitHub repository with a computer vision application implementation",
+      "Add a data preprocessing script to your GitHub portfolio repository",
+      "Add a computer vision model script to your GitHub portfolio repository",
+      "Add a model interpretation and explanation script to your GitHub portfolio repository",
+      "A GitHub repository containing a Dockerfile and Kubernetes deployment configuration for a computer vision model.",
+      "Repository artifact: A GitHub repository containing the video frame processing pipeline implementation and a simple video summarization application",
+      "Repository artifact: A GitHub repository containing the human behavior and movement analysis system implementation and a real-time object tracking application"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Prompt Engineering": {
+    "definition": "Instructing LLMs via structured context prompts, zero-shot, few-shot, and chain-of-thought system instructions.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 10,
+    "prerequisites": [],
+    "next_skills": [
+      "RAG Systems",
+      "AI Workflow Engineering"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Enterprise Agent Developer"
+    ],
+    "projects_using_skill": [
+      "repository/week6_llm_prompts/llm_cli_app.py",
+      "Prompt_Engineering_Playground.ipynb (or .md file)",
+      "prompt-engineering/advanced_prompt_script.py",
+      "A repository containing the prompt engineering exercise implementation",
+      "A documented Jupyter notebook explaining prompt design principles and LLM interactions"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "RAG Systems": {
+    "definition": "Retrieval Augmented Generation connecting PDF loaders, text chunk embeds, vector databases, and semantic search queries.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "Python",
+      "Prompt Engineering"
+    ],
+    "next_skills": [
+      "Agentic AI",
+      "LLM Evaluation"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Agentic AI": {
+    "definition": "Orchestrating stateful autonomous agents, multi-agent networks, decision loops, and tooling execution graphs.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 40,
+    "prerequisites": [
+      "Python",
+      "RAG Systems"
+    ],
+    "next_skills": [
+      "Cognitive Systems Architecture"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Agentic AI Developer",
+      "Multi-Agent Systems Engineer"
+    ],
+    "projects_using_skill": [
+      "A Terraform or CloudFormation implementation of an agentic AI system deployment environment.",
+      "A TensorFlow or PyTorch implementation of an agentic AI system using cognitive architectures."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Vector Databases": {
+    "definition": "Indexing high-dimensional vector embeddings, cosine similarities, HNSW indexes, and metadata filtering.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Python"
+    ],
+    "next_skills": [
+      "RAG Systems"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Vector Database Specialist"
+    ],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Docker": {
+    "definition": "Containerization, writing Dockerfiles, mapping port bindings, and managing container storage volumes.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 20,
+    "prerequisites": [
+      "Git"
+    ],
+    "next_skills": [
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "related_skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "career_roles_using_skill": [
+      "Cognitive Systems Architect",
+      "AI Solutions Engineer",
+      "Autonomous Systems Specialist",
+      "Feature Store Specialist",
+      "ML Research Scientist",
+      "ML Pipeline Developer",
+      "ML Platform Engineer",
+      "GPU Tuning Engineer",
+      "Compute Resource Allocator",
+      "LLM Developer",
+      "RAG Engineer",
+      "Fine-Tuning Specialist",
+      "Visual CV Architect",
+      "Decision Scientist",
+      "Data Science Lead"
+    ],
+    "projects_using_skill": [
+      "repository/week8_mlops_deployment/sentiment_api/ and Dockerfile, .github/workflows/deploy.yml",
+      "Docker container and Kubernetes deployment scripts",
+      "repository/docker-dl-env/Dockerfile",
+      "repository/docker-advanced/docker-compose.yml",
+      "repository/gcp-gpu-automation/provision_dl_instance.sh",
+      "repository/capstone-dl-orchestrator/",
+      "rag-deployment/fastapi_rag_docker/",
+      "domain-specific-rag-app/",
+      "A GitHub repository with the model deployment pipeline and example usage",
+      "A GitHub repository containing a Dockerfile and Kubernetes deployment configuration for a computer vision model."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Kubernetes": {
+    "definition": "Fleet orchestration of containers, Kubernetes deployments, service discovery, pod auto-scaling, and grid ingress paths.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 45,
+    "prerequisites": [
+      "Docker",
+      "Git"
+    ],
+    "next_skills": [
+      "Chaos Engineering",
+      "Infrastructure Automation"
+    ],
+    "related_skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "career_roles_using_skill": [
+      "Cognitive Systems Architect",
+      "Autonomous Systems Specialist",
+      "ML Pipeline Developer",
+      "ML Platform Engineer",
+      "GPU Tuning Engineer",
+      "Compute Resource Allocator",
+      "LLM Developer",
+      "Fine-Tuning Specialist",
+      "Visual CV Architect",
+      "Decision Scientist",
+      "Predictive Modeler",
+      "Postgres Administrator",
+      "Backend Developer",
+      "Application Developer",
+      "Git Operations Lead"
+    ],
+    "projects_using_skill": [
+      "Commit a Python script that deploys and maintains an ML model using TensorFlow and Kubernetes",
+      "Docker container and Kubernetes deployment scripts",
+      "repository/kubernetes-basics/dl_model_api_deployment.yaml",
+      "repository/kubernetes-dl/distributed_training_job.yaml",
+      "repository/capstone-dl-orchestrator/",
+      "A GitHub repository with the model deployment pipeline and example usage",
+      "A GitHub repository containing a Dockerfile and Kubernetes deployment configuration for a computer vision model.",
+      "deployment_pipeline.py",
+      "commit to GitHub repository: docker_kubernetes_example.yaml",
+      "commit a code repository to their GitHub portfolio with a scalable data pipeline implementation using Kubernetes and Docker"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "CI/CD": {
+    "definition": "Continuous integration pipelines, automated container image building, testing suites execution, and cloud deployments.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 20,
+    "prerequisites": [
+      "Git",
+      "Docker"
+    ],
+    "next_skills": [
+      "Platform Engineering"
+    ],
+    "related_skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "career_roles_using_skill": [
+      "DevOps Engineer",
+      "CI/CD Pipeline Lead"
+    ],
+    "projects_using_skill": [
+      "A 'full-stack-blog-app-optimized/' repository with a `.github/workflows/ci.yml` (CI/CD config), updated React code for lazy loading, and potentially updated Express code for caching/indexing, and an updated `README.md`.",
+      "A GitHub repository containing the cloud-deployed web application and CI/CD pipeline",
+      "A GitHub repository containing the containerized web application and CI/CD pipeline",
+      "Push the automated pipeline configuration and documentation to GitHub",
+      "A GitHub repository with a containerized Node.js application",
+      "repository/deployed_api/.github/workflows/deploy.yml",
+      "repository/week15-project-mgmt-app/.github/workflows/main.yml",
+      "commit a Kubernetes configuration file and a markdown file describing the CI/CD pipeline",
+      "repository/github-actions-cicd-pipeline/.github/workflows/main.yml",
+      "repository/gitops-argocd-deployments/k8s-manifests/"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "GitHub Actions": {
+    "definition": "Workflow automation triggers, runner execution files, step dependencies, cache actions, and secrets storage security.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Git"
+    ],
+    "next_skills": [
+      "CI/CD"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Web App Lead",
+      "DevOps Engineer",
+      "CI/CD Pipeline Lead",
+      "Site Reliability Engineer",
+      "Chaos Engineering Lead"
+    ],
+    "projects_using_skill": [
+      "repository/week8_mlops_deployment/sentiment_api/ and Dockerfile, .github/workflows/deploy.yml",
+      "A 'full-stack-blog-app-optimized/' repository with a `.github/workflows/ci.yml` (CI/CD config), updated React code for lazy loading, and potentially updated Express code for caching/indexing, and an updated `README.md`.",
+      "repository/deployed_api/.github/workflows/deploy.yml",
+      "repository/week15-project-mgmt-app/.github/workflows/main.yml",
+      "Repository: 'PerfMonitor_CI_Project' including app code, Firebase configuration, CI workflow file, and documentation of performance metrics captured.",
+      "repository/github-actions-cicd-pipeline/.github/workflows/main.yml",
+      "repository/ci-cd-helm-app/.github/workflows/deploy.yaml, updated Helm chart in repo",
+      "cicd_flask_app/.github/workflows/main.yml",
+      "repository/ci-cd-pipelines/multi-tier-app-pipeline/.github/workflows/main.yml",
+      "automated-chaos-pipeline/"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Terraform": {
+    "definition": "Infrastructure as Code (IaC) configuration, cloud providers providers blocks, states management, and modules.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "AWS",
+      "Git"
+    ],
+    "next_skills": [
+      "Infrastructure Security Configuration"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Cloud Systems Administrator",
+      "Cloud Scaling Lead",
+      "Multicloud Coordinator",
+      "DevOps Engineer",
+      "Platform Engineer",
+      "CI/CD Pipeline Lead",
+      "DevOps Automation Engineer",
+      "Site Reliability Engineer",
+      "SRE Lead",
+      "Infrastructure Automation Engineer",
+      "Infrastructure Developer",
+      "Network Reliability Architect"
+    ],
+    "projects_using_skill": [
+      "A Terraform or CloudFormation implementation of an agentic AI system deployment environment.",
+      "repository/week16-ecommerce-app-aws/ecs_task_definition.json, repository/week16-ecommerce-app-aws/terraform (if using IaC)",
+      "Terraform script and cloud architecture design document",
+      "terraform-aws-web-app/",
+      "repository/terraform-aws-infra/main.tf",
+      "Terraform configuration file for a basic cloud infrastructure",
+      "A GitHub repository containing well-structured Terraform configuration files (`.tf`) for a multi-component cloud environment, with a `main.tf`, `variables.tf`, `outputs.tf`, and a README explaining the architecture and deployment steps.",
+      "A GitHub repository containing Ansible playbooks, inventory files, and potentially roles, used to configure a cloud server and deploy your application. Update your `Jenkinsfile` to include the Ansible deployment stage.",
+      "An updated `Jenkinsfile` (or equivalent) and `terraform` configurations reflecting the conceptual/partial implementation of a Blue/Green deployment strategy, along with a detailed markdown document explaining the chosen strategy, its implementation steps, and rollback procedures.",
+      "Terraform configuration files for provisioning the AWS CodePipeline, CodeBuild, CodeDeploy, ECR, and ECS/EC2 resources. Screenshots of the running pipeline in the AWS console and a `buildspec.yml` file."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "AWS": {
+    "definition": "Cloud infrastructure administration: EC2 virtualization, S3 storage buckets, IAM permissions, and networking routing.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "Linux Shell"
+    ],
+    "next_skills": [
+      "AWS Architecting",
+      "Multicloud Coordination"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Integration Engineer",
+      "Application Developer",
+      "Cloud Solutions Architect",
+      "Cloud Systems Administrator",
+      "AWS Architect",
+      "Multicloud Coordinator",
+      "Release Coordinator",
+      "DevOps Automation Engineer",
+      "Chaos Engineering Lead",
+      "Vulnerability Auditor"
+    ],
+    "projects_using_skill": [
+      "repository/week9_cloud_ai/cloud_model_deployment_gcp.md (or aws/azure)",
+      "week9_cloud_feature_store_comparison.md",
+      "GitHub repository with an LLM application and associated code documentation.",
+      "commit a code repository to their GitHub portfolio with a data processing application using Spark and AWS Glue",
+      "commit a code repository to their GitHub portfolio with a distributed data processing system implementation using Apache Beam",
+      "A star schema (dimensional model) in a GitHub repository",
+      "A data quality plan in a GitHub repository",
+      "A data load and unload process in a GitHub repository",
+      "A data pipeline script using AWS Glue committed to their GitHub portfolio",
+      "Cloud Computing Diagram and Serverless Application Code on GitHub"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Google Cloud Platform": {
+    "definition": "Cloud hosting services, App Engine deployments, BigQuery warehouses, and IAM authentication permissions.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "Linux Shell"
+    ],
+    "next_skills": [
+      "Multicloud Coordination"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Multicloud Coordinator"
+    ],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Azure": {
+    "definition": "Microsoft cloud ecosystem, Azure Active Directory permissions, Virtual Machines, and Cosmos DB storage databases.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "Linux Shell"
+    ],
+    "next_skills": [
+      "Multicloud Coordination"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "AI Integration Engineer",
+      "Application Developer",
+      "Cloud Solutions Architect",
+      "Cloud Systems Administrator",
+      "Multicloud Coordinator",
+      "Chaos Engineering Lead"
+    ],
+    "projects_using_skill": [
+      "repository/week9_cloud_ai/cloud_model_deployment_gcp.md (or aws/azure)",
+      "GitHub repository with an LLM application and associated code documentation.",
+      "Perception system deployment code using Azure",
+      "A configuration and implementation document for identity and access management controls in AWS",
+      "week13_cloud_security_monitor.md (Documentation of monitoring strategies for specific cloud misconfigurations with relevant log examples and alert descriptions).",
+      "cloud_security_architecture.pdf (diagram and explanation) and cloud_config_notes.md."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Ansible": {
+    "definition": "Agentless infrastructure configuration automation, playbooks, host inventories configurations, and ssh coordination.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 25,
+    "prerequisites": [
+      "Linux Shell"
+    ],
+    "next_skills": [
+      "Terraform Integration"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Cloud Systems Administrator",
+      "Multicloud Coordinator",
+      "DevOps Engineer",
+      "Platform Engineer",
+      "CI/CD Pipeline Lead",
+      "DevOps Automation Engineer",
+      "Site Reliability Engineer",
+      "SRE Lead",
+      "Infrastructure Automation Engineer",
+      "Infrastructure Developer",
+      "Network Reliability Architect"
+    ],
+    "projects_using_skill": [
+      "repository/ansible-ec2-provisioning/playbook.yml",
+      "A GitHub repository containing Ansible playbooks, inventory files, and potentially roles, used to configure a cloud server and deploy your application. Update your `Jenkinsfile` to include the Ansible deployment stage.",
+      "An updated `Jenkinsfile` (or equivalent) and `terraform` configurations reflecting the conceptual/partial implementation of a Blue/Green deployment strategy, along with a detailed markdown document explaining the chosen strategy, its implementation steps, and rollback procedures.",
+      "Repository containing Ansible inventory file, playbook(s), and any template or static files used for configuration.",
+      "ansible_docker_deploy/playbook.yaml",
+      "repository/ansible-config-management/webserver_setup.yml, inventory.ini",
+      "repository/ansible-config-management/multi-tier-app-roles/",
+      "Repository: `ansible-webserver-config` containing playbooks, roles, inventory, and `README.md`.",
+      "Repository `ansible-network-playbooks` with `inventory.ini` and at least two playbooks (`configure_vlans.yml`, `configure_ospf.yml`)."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Linux Shell": {
+    "definition": "CLI operating systems file hierarchies navigation, permissions configuration, processes tracking, and shell pipes.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [],
+    "next_skills": [
+      "Bash Scripting",
+      "AWS"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Nginx": {
+    "definition": "Reverse proxy web servers hosting routing setups, load balancer coordination, and SSL certificate mappings.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Linux Shell"
+    ],
+    "next_skills": [
+      "API Gateways"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "repository/week14-project-mgmt-app/Dockerfile.frontend, repository/week14-project-mgmt-app/Dockerfile.backend, repository/week14-project-mgmt-app/docker-compose.yml",
+      "repository/networking-lab/webserver_setup.md (documentation of server setup and firewall rules)",
+      "An updated `Jenkinsfile` (or equivalent) and `terraform` configurations reflecting the conceptual/partial implementation of a Blue/Green deployment strategy, along with a detailed markdown document explaining the chosen strategy, its implementation steps, and rollback procedures.",
+      "repository/docker-static-site/Dockerfile, index.html",
+      "repository/docker-compose-lamp-stack/docker-compose.yml, README.md",
+      "repository/kubernetes-nginx-deployment/nginx-deployment.yaml, nginx-service.yaml, README.md",
+      "A 'docker-basics' repository containing the `run_nginx.sh` script and a README explaining basic Docker commands.",
+      "A 'docker-networking-storage' repository including the Dockerfile for the 'Hit Counter' app, a README explaining the network and volume setup, and commands to run it.",
+      "A 'docker-troubleshooting-guide' repository containing the flawed application's Dockerfile/docker-compose.yml, and a comprehensive README/Markdown file detailing the troubleshooting steps and resolution.",
+      "Repository containing Terraform HCL files (`main.tf`, `variables.tf`, `outputs.tf`) for the AWS web server infrastructure."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Prometheus": {
+    "definition": "Time series database monitoring systems collecting CPU/RAM metrics and alert configurations.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 20,
+    "prerequisites": [
+      "Docker"
+    ],
+    "next_skills": [
+      "Grafana Dashboards"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "DevOps Engineer",
+      "CI/CD Pipeline Lead",
+      "Containerization Lead",
+      "DevOps Automation Engineer",
+      "Site Reliability Engineer",
+      "SRE Lead",
+      "Infrastructure Automation Engineer",
+      "Systems Reliability Auditor",
+      "Chaos Engineering Lead",
+      "Monitoring Analyst",
+      "Infrastructure Developer"
+    ],
+    "projects_using_skill": [
+      "cloudwatch_alarms_tf/",
+      "repository/app-monitoring-logging/grafana-dashboards/ (JSON files) & elasticsearch-config/",
+      "Prometheus configuration file for Kubernetes monitoring",
+      "Configuration files for Prometheus and Grafana dashboards, application code changes for instrumentation, and screenshots of the operational dashboard and a triggered alert, along with a README explaining the monitoring setup.",
+      "repository/kubernetes-monitoring/prometheus-helm-values.yaml, grafana-helm-values.yaml, network-policy.yaml, instrumented-app-deployment.yaml",
+      "Repository containing Prometheus configuration, Grafana dashboard JSON export, and the updated application code with exposed metrics.",
+      "repository/k8s-monitoring/prometheus-grafana-setup.yaml, my-app-grafana-dashboard.json",
+      "monitoring_stack/prometheus.yml",
+      "repository/kubernetes-observability/ (includes Prometheus/Grafana K8s YAMLs, dashboard JSON, alert rules)",
+      "repository/monitoring-observability/prometheus-grafana-setup/"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Grafana": {
+    "definition": "Analytics dashboards charting metrics visualizations, connecting data interfaces, and creating alerts panels.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Prometheus"
+    ],
+    "next_skills": [
+      "SRE Dashboards"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "DevOps Engineer",
+      "CI/CD Pipeline Lead",
+      "Containerization Lead",
+      "DevOps Automation Engineer",
+      "Site Reliability Engineer",
+      "SRE Lead",
+      "Infrastructure Automation Engineer",
+      "Systems Reliability Auditor",
+      "Chaos Engineering Lead",
+      "Monitoring Analyst",
+      "Infrastructure Developer"
+    ],
+    "projects_using_skill": [
+      "repository/dl-monitoring-cost/grafana_gpu_dashboard.json",
+      "repository/capstone-dl-orchestrator/",
+      "commit a custom dashboard configuration file and a markdown file describing the monitoring setup",
+      "cloudwatch_alarms_tf/",
+      "repository/app-monitoring-logging/grafana-dashboards/ (JSON files) & elasticsearch-config/",
+      "Configuration files for Prometheus and Grafana dashboards, application code changes for instrumentation, and screenshots of the operational dashboard and a triggered alert, along with a README explaining the monitoring setup.",
+      "repository/kubernetes-monitoring/prometheus-helm-values.yaml, grafana-helm-values.yaml, network-policy.yaml, instrumented-app-deployment.yaml",
+      "Repository containing Prometheus configuration, Grafana dashboard JSON export, and the updated application code with exposed metrics.",
+      "repository/k8s-monitoring/prometheus-grafana-setup.yaml, my-app-grafana-dashboard.json",
+      "monitoring_stack/prometheus.yml"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Swift": {
+    "definition": "Apple native applications compiled language, memory management safety, and UIKit/SwiftUI layout components.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 35,
+    "prerequisites": [],
+    "next_skills": [
+      "SwiftUI Development"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "iOS Developer"
+    ],
+    "projects_using_skill": [
+      "Create a new repo for your future iOS projects, and commit a basic setup file (e.g., a Swift file)",
+      "Commit a simple Swift project file with a few methods"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Kotlin": {
+    "definition": "Modern JVM language, Android applications, coroutines, and null safety architectures.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 35,
+    "prerequisites": [
+      "Java"
+    ],
+    "next_skills": [
+      "Android SDK Architectures"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Android Developer"
+    ],
+    "projects_using_skill": [
+      "repository/kotlin-adventure-game/README.md"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Flutter": {
+    "definition": "Cross-platform mobile SDK using Dart compiler engine, canvas layouts, and widget state trees.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [],
+    "next_skills": [
+      "Cross-platform Capstone Deployments"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Flutter Developer",
+      "Mobile UI Builder"
+    ],
+    "projects_using_skill": [
+      "A 'Flutter-Intro' GitHub repository containing the greeting app and UI recreation exercises.",
+      "A 'Flutter-Layouts-Input' GitHub repository containing the shopping list app and layout/form exercises.",
+      "A 'Flutter-Provider-State' GitHub repository containing the favorite meals app and `provider` conversion exercises.",
+      "A 'Flutter-Navigation' GitHub repository containing the book browser app and navigation exercises.",
+      "A 'Flutter-Networking' GitHub repository containing the weather app and API fetching exercises.",
+      "A 'Flutter-Local-Persistence' GitHub repository containing the daily journal app and settings/contact list exercises.",
+      "A 'Flutter-Firebase-Chat' GitHub repository containing the chat app and auth/Firestore exercises.",
+      "A 'Flutter-Advanced-UI-Animations' GitHub repository containing the product details screen and animation/custom widget exercises.",
+      "A 'Flutter-Testing-Deployment' GitHub repository containing the tested and deployed application, with a detailed `README.md` showcasing testing reports and deployment steps.",
+      "my_profile_app/lib/main.dart"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "React Native": {
+    "definition": "JavaScript framework leveraging React component structure to render native iOS and Android apps views.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "React"
+    ],
+    "next_skills": [
+      "Native Bridge Modules"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "React Native Developer"
+    ],
+    "projects_using_skill": [
+      "rn-performance-refactor-movie-browser/"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Cybersecurity": {
+    "definition": "Infrastructure security configuration protocols, network firewalls setup, cryptography algorithms, and auth designs.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 40,
+    "prerequisites": [
+      "Linux Shell"
+    ],
+    "next_skills": [
+      "Penetration Testing"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "SOC Analyst",
+      "Penetration Tester",
+      "Cybersecurity Engineer",
+      "Threat Intelligence Analyst",
+      "Network Defender",
+      "Incident Response Specialist"
+    ],
+    "projects_using_skill": [
+      "risk_assessment_report.pdf and security_policies.md.",
+      "updated_resume.pdf, optimized_linkedin_profile.url, and a comprehensive GitHub portfolio README.md.",
+      "repository_root/week1/personal_security_plan.md",
+      "cybersecurity_intro/Top5CyberThreats_Report.pdf"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Penetration Testing": {
+    "definition": "Ethical hacking exploits testing, finding open network vulnerabilities, SQL injections, and system exploits.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 45,
+    "prerequisites": [
+      "Cybersecurity"
+    ],
+    "next_skills": [
+      "Red Team Infrastructure Testing"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "kali_setup.sh and windows_hardening_check.ps1"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Unit Testing": {
+    "definition": "Writing testing assertions validating single modules functions isolation, mock classes, and coverage reports.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [
+      "Python",
+      "JavaScript",
+      "Java"
+    ],
+    "next_skills": [
+      "CI/CD"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "A comprehensive API testing framework, including unit testing, integration testing, and logging, in a GitHub repository."
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "UI/UX Design": {
+    "definition": "Visual UI hierarchies layouts creation, color coordinate theories, user pathways mapping, and interface wireframing.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 25,
+    "prerequisites": [],
+    "next_skills": [
+      "Figma",
+      "Design Systems"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Mobile UI Builder",
+      "UI/UX Designer"
+    ],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Figma": {
+    "definition": "Designing responsive app wireframes, component design libraries, interaction triggers, and user layouts mockups.",
+    "difficulty": "Beginner",
+    "estimated_learning_hours": 15,
+    "prerequisites": [],
+    "next_skills": [
+      "Product Design",
+      "Figma-to-Code Developer"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Figma-to-Code Developer",
+      "Product Designer",
+      "Interaction Designer",
+      "Figma Prototyper",
+      "Wireframe Architect",
+      "Visual Design Specialist"
+    ],
+    "projects_using_skill": [
+      "repository/kubernetes-dl/distributed_training_job.yaml",
+      "A GitHub repository with a simple Figma design",
+      "A GitHub repository with a responsive Figma design",
+      "repository/kubernetes-fullstack-app/k8s-manifests/",
+      "repository/kubernetes-app-deployment/app-deployment.yaml, app-service.yaml, app-configmap.yaml",
+      "repository/kubernetes-postgresql/postgresql-deployment.yaml, postgresql-service.yaml, postgresql-pvc.yaml, postgresql-configmap.yaml",
+      "repository/k8s-stateful/wordpress-mysql-deployment.yaml, mysql-statefulset.yaml, wordpress-configmap.yaml, mysql-secret.yaml",
+      "repository/gitops-webapp-config/argo-application.yaml, k8s-manifests/",
+      "repository/kubernetes-app-deployment/ (includes all K8s YAML files)",
+      "repository/kubernetes-projects/multi-tier-app-k8s-manifests/"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "PostgreSQL": {
+    "definition": "Relational database server, indexes operations, query optimization, connection pools, and transactional isolation.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "SQL"
+    ],
+    "next_skills": [
+      "Database Administration"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Database Engineer",
+      "Postgres Administrator",
+      "Backend Developer",
+      "Full Stack Developer",
+      "Database Connections Lead",
+      "Web App Lead"
+    ],
+    "projects_using_skill": [
+      "week5_inventory_physical_schema.sql",
+      "Commit a PostgreSQL database file to the GitHub portfolio",
+      "Commit the PostgreSQL database schema file to the GitHub portfolio",
+      "Commit the PostgreSQL deployment configuration file to the GitHub portfolio",
+      "Commit the PostgreSQL database performance monitoring and optimization script to the GitHub portfolio",
+      "Commit the PostgreSQL database backup and recovery script to the GitHub portfolio",
+      "An 'express-blog-api-postgres/' directory containing `server.js`, a `database.sql` file (for schema and initial data), `package.json`, and a `README.md`.",
+      "A 'full-stack-blog-app-deployed/' repository with separate `client/` (React) and `server/` (Express) folders, and a `README.md` including deployment links.",
+      "repository/week8-sql-db/contact_db_manager.py (and schema.sql)",
+      "repository/week10-flask-db-orm/quotes_api_db.py (and models.py)"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "MongoDB": {
+    "definition": "NoSQL document database storage storing JSON documents, dynamic schemas configurations, and aggregate arrays queries.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 20,
+    "prerequisites": [],
+    "next_skills": [
+      "Scaling NoSQL Grids"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Database Engineer",
+      "Full Stack Developer",
+      "Database Connections Lead",
+      "Full Stack Web Developer",
+      "Web App Lead"
+    ],
+    "projects_using_skill": [
+      "week10_blog_nosql_model.json (with design choices explanation)",
+      "An 'express-product-reviews-api-mongodb/' directory with `server.js`, `models/Review.js`, `package.json`, and a `README.md` explaining the API.",
+      "A 'full-stack-blog-app-deployed/' repository with separate `client/` (React) and `server/` (Express) folders, and a `README.md` including deployment links.",
+      "MongoDB database schema design",
+      "A GitHub repository containing a simple RESTful API using Node.js and Express",
+      "A GitHub repository containing a cloud-ready web application using Node.js, Express, and MongoDB",
+      "repository/week8-movie-review-api/models/Movie.js, repository/week8-movie-review-api/routes/reviews.js",
+      "A GitHub repository containing `Dockerfile`s for each component of your multi-service application and a `docker-compose.yml` file, along with a README explaining how to run the application.",
+      "repository/docker-nodejs-mongodb-app/README.md, Dockerfile (for node), Dockerfile (for mongo), network-setup.sh",
+      "repository/my-app-helm-chart/charts/my-app/"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Redis": {
+    "definition": "In-memory database cache, key-value storage grids, publish-subscribe queues, and atomic operations.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 15,
+    "prerequisites": [],
+    "next_skills": [
+      "High Performance Caching Grid Architecture"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Backend Developer",
+      "Database Connections Lead"
+    ],
+    "projects_using_skill": [
+      "week6_feast_online_serving.py (and relevant config)",
+      "repository/containerized_api/docker-compose.yml",
+      "repository/optimized_secure_api/",
+      "A GitHub repository containing `Dockerfile`s for each component of your multi-service application and a `docker-compose.yml` file, along with a README explaining how to run the application.",
+      "A 'docker-compose-voting-app' repository containing the `docker-compose.yml` file, Dockerfiles for each service, and application code.",
+      "Repository containing the web application source code, `Dockerfile`, and `docker-compose.yml`.",
+      "Repository containing Kubernetes YAML manifests for the web application (deployment, service for both web and Redis).",
+      "Repository containing the Helm chart for the multi-container application and the Ingress manifest.",
+      "docker_projects/flask_redis_app/docker-compose.yml",
+      "ansible_docker_deploy/playbook.yaml"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Cassandra": {
+    "definition": "Distributed wide-column storage database scaling huge write loops across cluster rings.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 35,
+    "prerequisites": [
+      "SQL"
+    ],
+    "next_skills": [
+      "Big Data Infrastructure"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Database Connections Lead"
+    ],
+    "projects_using_skill": [
+      "Commit a Spark program to your GitHub repository that works with HBase and Cassandra"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Apache Spark": {
+    "definition": "Cluster data compute framework processing large batch records, dataset transforms, and RDD pools.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 40,
+    "prerequisites": [
+      "Python",
+      "SQL"
+    ],
+    "next_skills": [
+      "PySpark Machine Learning Pipeline"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Feature Store Specialist",
+      "ML Pipeline Developer",
+      "Model Optimization Engineer",
+      "ML Platform Engineer",
+      "MLOps Automation Lead",
+      "ETL Developer",
+      "Data Lake Specialist",
+      "Spark Operations Lead",
+      "DB Integration Engineer"
+    ],
+    "projects_using_skill": [
+      "Create a GitHub repository with a data processing pipeline implementation",
+      "Data warehouse design document"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "PySpark": {
+    "definition": "Python wrapper interface API connecting to Apache Spark cluster compute grids, mapping datasets dataframes.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 30,
+    "prerequisites": [
+      "Python",
+      "Apache Spark"
+    ],
+    "next_skills": [
+      "Big Data Analytics"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "week2_pyspark_feature_processing.py",
+      "week3_realtime_feature_pipeline.py",
+      "week6_feast_online_serving.py (and relevant config)",
+      "Create a repository with a Python script that demonstrates a distributed computing pipeline using PySpark"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Snowflake": {
+    "definition": "Cloud data warehousing system, cloud storage separation, SQL analysis scaling, and pipelines.",
+    "difficulty": "Intermediate",
+    "estimated_learning_hours": 25,
+    "prerequisites": [
+      "SQL"
+    ],
+    "next_skills": [
+      "Enterprise Business Intelligence Pipelines"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [],
+    "projects_using_skill": [
+      "week11_cloud_data_model_ddl.sql (with comments for cloud-specific features)"
+    ],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  },
+  "Apache Kafka": {
+    "definition": "Distributed event streaming platform, message topic partition queues, producers and consumers loops.",
+    "difficulty": "Advanced",
+    "estimated_learning_hours": 35,
+    "prerequisites": [
+      "Docker"
+    ],
+    "related_skills": [
+      "REST APIs",
+      "Git"
+    ],
+    "career_roles_using_skill": [
+      "Feature Store Specialist",
+      "Spark Operations Lead"
+    ],
+    "projects_using_skill": [],
+    "concept_dependencies": {
+      "Variables": "prerequisite for Lists & Dicts",
+      "Functions": "prerequisite for OOP & Classes",
+      "Fundamentals": "prerequisite for Advanced Operations",
+      "Tool Setup": "prerequisite for API Integration"
+    }
+  }
+}
