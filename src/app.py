@@ -1612,7 +1612,7 @@ else:
     <div style='display:flex; align-items:center; gap:12px;'>
         <div style='width:36px; height:36px; border-radius:8px; background:rgba(108,99,255,0.15); display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;'>{type_icon}</div>
         <div style='flex:1; min-width:0;'>
-            <div style='font-size:13.5px; font-weight:700; color:#FFFFFF; line-height:1.3; overflow:hidden; text-overflow:ellipsis;'>#{seq_num} {res_title}</div>
+            <div style='font-size:13.5px; font-weight:700; color:#FFFFFF; line-height:1.4; word-wrap:break-word; white-space:normal; overflow-wrap:break-word; word-break:break-word;'>#{seq_num} {res_title}</div>
             <div style='font-size:11.5px; color:rgba(255,255,255,0.45); margin-top:2px;'>{res_prov} • {res_type.capitalize()}</div>
         </div>
         <a href='{res_url}' target='_blank' style='background:rgba(108,99,255,0.2); border:1px solid rgba(108,99,255,0.4); color:#A78BFA; text-decoration:none; font-size:11.5px; font-weight:600; padding:6px 12px; border-radius:6px; white-space:nowrap;'>Start Learning →</a>
