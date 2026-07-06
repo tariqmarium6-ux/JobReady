@@ -1,318 +1,278 @@
-# 🚀 JobReady AI
-### AI-Powered Career Learning Platform for Emerging Technology Careers
+# 🚀 JobReady
 
-> **JobReady AI** is an AI-assisted career learning platform that helps learners navigate rapidly evolving technology careers through curated, industry-aligned learning roadmaps. Instead of overwhelming users with thousands of unrelated courses, JobReady organizes learning into structured weekly pathways inspired by industry expectations.
+> **Curated AI & Tech Learning Paths for Career Readiness**
 
----
-Why JobReady?
-Learning modern technology is no longer limited by the lack of content—it is limited by the lack of direction. JobReady was created to organize fragmented educational resources into structured, career-oriented roadmaps while using AI to support learners throughout their journey. Our goal is not to replace learning platforms, but to make learning paths clearer, more reliable, and easier to follow.
+JobReady is an AI-powered learning platform that helps aspiring developers and technology enthusiasts discover structured learning paths for high-demand careers in Artificial Intelligence and emerging technologies.
 
----
-# 📖 Table of Contents
-
-- Overview
-- Problem Statement
-- Solution
-- Features
-- Architecture
-- AI Components
-- Technology Stack
-- Project Structure
-- Installation
-- Running Locally
-- Deployment
-- Screenshots
-- Future Work
-- Team
+Unlike generic search engines or scattered tutorials, JobReady provides carefully curated learning journeys inspired by platforms like Coursera, DeepLearning.AI, Hugging Face, and official documentation. Every learning path is organized into weekly modules with trusted resources, allowing learners to focus on learning instead of spending hours searching for quality content.
 
 ---
 
-# 🎯 Problem Statement
+# 📌 Problem Statement
 
-Technology is evolving faster than ever, but learning platforms often leave users asking:
+Learning AI and modern technology is overwhelming.
 
-- Which technology should I learn?
-- Which career roles exist within a domain?
-- What should I study first?
-- Which resources are trustworthy?
-- What happens when recommended resources become unavailable?
-- How can I stay organized throughout my learning journey?
+A beginner often faces questions like:
 
-Most platforms provide courses but not structured career roadmaps.
+* Which technology should I learn first?
+* Which role matches my interests?
+* Which resources are actually trustworthy?
+* How do I organize hundreds of tutorials into a structured learning path?
 
-Learners often spend more time searching for resources than actually learning.
+Most learners jump between YouTube videos, blogs, documentation, and online courses without a clear roadmap. This leads to information overload and low completion rates.
+
+JobReady solves this by providing curated, structured, career-oriented learning paths.
 
 ---
 
 # 💡 Solution
 
-JobReady transforms career exploration into a guided learning experience.
+JobReady offers a guided learning experience where users can:
 
-Instead of presenting thousands of disconnected resources, JobReady offers carefully curated learning pathways that take learners from career selection to structured weekly learning plans.
+* Browse high-demand technology domains.
+* Explore multiple career roles inside each domain.
+* Follow structured weekly learning modules.
+* Access carefully validated learning resources.
+* Track learning progress.
+* Chat with an integrated AI Study Assistant for learning support.
 
-The platform combines:
-
-- Career Domain Explorer
-- Role Selection
-- Weekly Learning Roadmaps
-- Curated Educational Resources
-- AI Study Assistant
-- Progress Tracking
-- Quiz System
-- Resource Validation
-- Automatic Resource Recovery
-
-into a single modern learning platform.
+The platform focuses on simplicity, premium UI, and curated quality rather than overwhelming users with endless search results.
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
-## 🧭 Technology Domain Explorer
+## 🎯 Technology Domain Explorer
 
-Explore high-demand technology domains including:
-
-- Artificial Intelligence
-- Agentic AI
-- Machine Learning
-- Data Science
-- Cybersecurity
-- Cloud Computing
-- DevOps
-- Software Engineering
-
-Each domain contains multiple curated career roles.
+* Browse multiple AI and technology domains.
+* Premium dark UI with modern card layouts.
+* Search supported.
+* Technology organized into curated categories.
 
 ---
 
-## 🎓 Curated Career Roadmaps
+## 👨‍💻 Career Role Browser
 
-Each role contains:
+Each domain contains multiple career roles including:
 
-- Weekly learning timeline
-- Learning objectives
-- Industry competencies
-- Recommended projects
-- Trusted learning resources
+* AI Engineer
+* Machine Learning Engineer
+* Prompt Engineer
+* LLM Engineer
+* Data Scientist
+* DevOps Engineer
+and more 160 roles
 
-The curriculum is professionally structured instead of randomly generated.
+Each role includes:
+
+* Estimated learning duration
+* Difficulty
+* Industry outlook
+* Learning modules
+
+---
+
+## 📚 Weekly Learning Dashboard
+
+Each learning path contains:
+
+* Weekly objectives
+* Curated learning resources
+* Learning checklist
+* Progress tracking
+* Study hour logging
 
 ---
 
 ## 🤖 AI Study Assistant
 
-Built using **Google Agent Development Kit (ADK)**.
+JobReady integrates **Google Agent Development Kit (ADK)** to power an AI Study Assistant that helps learners:
 
-Provides contextual assistance for the learner's current roadmap, helping explain concepts, recommend study strategies, and answer learning questions.
+* Understand difficult concepts
+* Answer curriculum-related questions
+* Stay motivated
+* Clarify weekly learning objectives
 
----
-
-## 🔗 Intelligent Resource Validation
-
-Educational resources frequently become unavailable over time.
-
-JobReady automatically:
-
-- detects broken resources
-- validates educational links
-- replaces unavailable resources with verified alternatives
-- maintains an updated learning experience
+The assistant acts as an intelligent tutor throughout the learning journey.
 
 ---
 
-## 📊 Learner Dashboard
+## ✅ Resource Validation System
 
-Track:
+Broken educational resources can ruin the learning experience.
 
-- Weekly progress
-- Study hours
-- Course completion
-- Learning timeline
-- Weekly checklists
+JobReady includes a resource validation system that:
 
----
-
-## 🧠 Knowledge Assessments
-
-Generate quizzes to reinforce learning and evaluate weekly progress.
+* Detects unavailable learning resources
+* Uses verified fallback resources
+* Prioritizes official documentation and trusted platforms
+* Prevents learners from encountering dead links
 
 ---
 
-## 🏅 Achievement System
+## 🌙 Premium UI/UX
 
-Learners earn badges based on:
+The interface was redesigned with inspiration from:
 
-- Study consistency
-- Quiz performance
-- Weekly completion
+* Linear
+* Coursera
+* Stripe
+* Vercel
+
+Features include:
+
+* Premium dark theme
+* Modern glassmorphism
+* Responsive layouts
+* Consistent typography
+* Accent-based color system
+* Interactive cards
+* Timeline-based learning dashboard
 
 ---
 
-# 🏗 System Architecture
+# 🏗 Architecture
 
-```text
-                    +-------------------+
-                    |   Technology      |
-                    | Domain Explorer   |
-                    +-------------------+
-                              |
-                              ▼
-                    +-------------------+
-                    |   Career Roles    |
-                    +-------------------+
-                              |
-                              ▼
-                    +-------------------+
-                    | Weekly Curriculum |
-                    +-------------------+
-                              |
-         +--------------------+--------------------+
-         |                    |                    |
-         ▼                    ▼                    ▼
-  Curated Resources     AI Study Assistant   Progress Tracker
-         |                    |                    |
-         +--------------------+--------------------+
-                              |
-                              ▼
-                    Resource Validator
-                              |
-                              ▼
-                      Fallback Generator
+```
+                User
+
+                  │
+
+        Streamlit Frontend
+
+                  │
+
+        Learner Dashboard UI
+
+                  │
+
+ ┌─────────────────────────────────┐
+ │                                 │
+ │  Google ADK Study Assistant      │
+ │                                 │
+ └─────────────────────────────────┘
+
+                  │
+
+      Resource Validation Layer
+
+                  │
+
+       Curated JSON Databases
+
+        • Domains
+        • Roles
+        • Curriculum
+        • Resources
+        • Skills Network
+
+                  │
+
+      SQLite User Persistence
 ```
 
 ---
 
-# 🤖 AI Components
-
-## 1. Study Assistant Agent
-
-Built using:
-
-- Google Agent Development Kit (ADK)
-- Gemini
-
-Responsibilities:
-
-- Answer learner questions
-- Explain concepts
-- Support weekly learning
-
----
-
-## 2. AI Fallback Helper
-
-When educational resources become unavailable:
-
-- Detects broken links
-- Uses AI to recommend high-quality replacements
-- Preserves learning continuity
-
----
-
-# 🛠 Technology Stack
+# 🛠 Technologies Used
 
 ## Frontend
 
-- Streamlit
-- Custom HTML/CSS
-- Modern Dark UI
-
----
+* Streamlit
+* HTML/CSS
+* Custom CSS Styling
 
 ## Backend
 
-- Python
-
----
+* Python
 
 ## AI
 
-- Google Agent Development Kit (ADK)
-- Gemini
-- Groq
-- Antigravity
-
----
+* Google Agent Development Kit (ADK)
+* Google Gemini 1.5 Flash
 
 ## Database
 
-- SQLite
-- Firestore (optional)
-- JSON Knowledge Base
-
----
+* SQLite
+* JSON
 
 ## Deployment
 
-- Docker
-- Google Cloud Run
+* Docker
+* Google Cloud Run
 
 ---
 
 # 📂 Project Structure
 
-```text
+```
 JobReady/
-│
-├── app.py
-├── Dockerfile
-├── requirements.txt
+
 ├── database/
-│   ├── domains.json
-│   ├── roles.json
 │   ├── curriculum.json
+│   ├── domains.json
 │   ├── resources.json
+│   ├── roles.json
 │   ├── skills_network.json
-│   └── resource_status.json
+│   └── user_profiles.db
 │
 ├── src/
+│   ├── app.py
 │   ├── agents_config.py
-│   ├── quiz_generator.py
 │   ├── resource_validator.py
 │   ├── ai_fallback_helper.py
-│   ├── skill_graph.py
 │   ├── oauth_handler.py
-│   └── database_interface.py
+│   └── ...
 │
+├── Dockerfile
+├── requirements.txt
 └── README.md
 ```
 
 ---
 
-# ⚙ Installation
+# ⚙️ Installation
 
-Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/tariqmarium6-ux/JobReady.git
+```
 
+Enter the project directory:
+
+```bash
 cd JobReady
 ```
 
-Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+Create a `.env` file containing:
 
-# ▶ Running Locally
+```env
+GEMINI_API_KEY=your_key
+GROQ_API_KEY=your_key
+```
+
+Run the application:
 
 ```bash
-streamlit run app.py
+streamlit run src/app.py
 ```
 
 ---
 
 # ☁ Deployment
 
-JobReady is containerized using Docker and deployed on **Google Cloud Run**.
+The application is containerized using Docker and deployed on **Google Cloud Run**.
 
 Deployment workflow:
 
 1. Build Docker image
-2. Push to Google Artifact Registry
+2. Push container
 3. Deploy to Cloud Run
 4. Configure environment variables
 5. Launch application
@@ -323,42 +283,34 @@ Deployment workflow:
 
 
 
-### Landing Page
-
-![Landing](docs/landing.png)
-
----
-
-### Career Domain Explorer
-
-![Domains](docs/domains.png)
+* Home Screen ( Screenshot 2026-07-06 183111.png )
+* Domain Browser ( Screenshot 2026-07-06 184740.png )
+* Career Role Selection ( Screenshot 2026-07-06 184933.png ) 
+* Learner Dashboard ( Screenshot 2026-07-06 185217.png )
+* AI Study Assistant ( Screenshot 2026-07-06 185325.png )
 
 ---
 
-### Learning Dashboard
+# 🎯 Future Improvements
 
-![Dashboard](docs/dashboard.png)
-
----
-
-### Weekly Roadmap
-
-
-
----
+* Personalized skill assessment
+* Dynamic curriculum generation
+* Live job market integration
+* Certifications & achievements
+* Community learning
+* Resume-based recommendations
 
 ---
 
-# 👥 Team
+# 👥 Authors
 
-**Project:** JobReady AI
+**Marium Tariq**
+**Farzeen Fatima**
 
-Developed by: 
--Marium Tariq
--Farzeen Fatima
+Developed for the Kaggle X Google capstone project
 
 ---
 
 # 📄 License
 
-This project was developed for educational and hackathon purposes.
+This project is intended for educational and hackathon purposes.
