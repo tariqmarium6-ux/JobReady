@@ -282,11 +282,11 @@ Deployment workflow:
 # 📸 Screenshots
 
 
-* [Home Screen](Screenshot-2026-07-06-183111.png)
-* [Domain Browser](Screenshot-2026-07-06-184740.png)
-* [Career Role Selection](Screenshot-2026-07-06-184933.png)
-* [Learner Dashboard](Screenshot-2026-07-06-185217.png)
-* [AI Study Assistant](Screenshot-2026-07-06-185325.png)
+* [Home Screen](homescreen.png)
+* [Domain Browser](domain.png)
+* [Career Role Selection](careerrole.png)
+* [Learner Dashboard](dashboard.png)
+* [AI Study Assistant](assistant.png)
 ---
 
 # 🎯 Future Improvements
