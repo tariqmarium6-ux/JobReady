@@ -283,11 +283,11 @@ Deployment workflow:
 
 
 
-* Home Screen ( Screenshot 2026-07-06 183111.png )
-* Domain Browser ( Screenshot 2026-07-06 184740.png )
-* Career Role Selection ( Screenshot 2026-07-06 184933.png ) 
-* Learner Dashboard ( Screenshot 2026-07-06 185217.png )
-* AI Study Assistant ( Screenshot 2026-07-06 185325.png )
+* [Home Screen](images/2026-07-06-183111.png)
+* [Domain Browser](images/2026-07-06-184740.png)
+* [Career Role Selection](images/2026-07-06-184933.png)
+* [Learner Dashboard](images/2026-07-06-185217.png)
+* [AI Study Assistant](images/2026-07-06-185325.png)
 
 ---
 
