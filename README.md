@@ -7,6 +7,8 @@
 Explore the complete architectural breakdown and overview of the JobReady system
 **video Overview:** [Listen to the NotebookLM System Breakdown](https://notebooklm.google.com/notebook/9df5b136-2a6c-47e0-9e0b-3b58aaec0cb7/artifact/16e3e9ce-4b83-4688-890a-80d70b6a42a1?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_)
 
+**Walk through DEMO** : https://youtu.be/2NG5ruSRNJ4?si=b5K0xprPlqqHoBBQ
+
 **presentation**: https://notebooklm.google.com/notebook/9df5b136-2a6c-47e0-9e0b-3b58aaec0cb7/artifact/3844f39d-bcab-4a8e-b1f3-846b97cd4b22?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
 
 > **Curated AI & Tech Learning Paths for Career Readiness**
