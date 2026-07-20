@@ -1,509 +1,376 @@
-🚀 JobReady
+# 🚀 JobReady
 
-Presentation and Overview
+## Presentation and Overview
 
-Job ready link: https://jobready-xkwpqzwvtwevbls8wqhclw.streamlit.app/
+**Job ready link**: [https://jobready-xkwpqzwvtwevbls8wqhclw.streamlit.app/](https://jobready-xkwpqzwvtwevbls8wqhclw.streamlit.app/)
 
 Explore the complete architectural breakdown and overview of the JobReady system
 
-Video Overview: Listen to the NotebookLM System Breakdown
+**Video Overview:** [Listen to the NotebookLM System Breakdown](https://notebooklm.google.com/notebook/9df5b136-2a6c-47e0-9e0b-3b58aaec0cb7/artifact/16e3e9ce-4b83-4688-890a-80d70b6a42a1?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_)
 
-Walk through DEMO: https://youtu.be/2NG5ruSRNJ4?si=b5K0xprPlqqHoBBQ
+**Walk through DEMO**: [https://youtu.be/2NG5ruSRNJ4?si=b5K0xprPlqqHoBBQ](https://youtu.be/2NG5ruSRNJ4?si=b5K0xprPlqqHoBBQ)
 
-Presentation: https://notebooklm.google.com/notebook/9df5b136-2a6c-47e0-9e0b-3b58aaec0cb7/artifact/3844f39d-bcab-4a8e-b1f3-846b97cd4b22?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+**Presentation**: [https://notebooklm.google.com/notebook/9df5b136-2a6c-47e0-9e0b-3b58aaec0cb7/artifact/3844f39d-bcab-4a8e-b1f3-846b97cd4b22?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1](https://notebooklm.google.com/notebook/9df5b136-2a6c-47e0-9e0b-3b58aaec0cb7/artifact/3844f39d-bcab-4a8e-b1f3-846b97cd4b22?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1)_
 
+> **Organizing the World's Free Learning Resources into Structured Career Paths**
 
-Organizing the World's Free Learning Resources into Structured Career Paths
-
-JobReady solves a critical problem: the world has unlimited free, high-quality learning resources (DeepLearning.AI, Hugging Face, freeCodeCamp, YouTube, official documentation ), but they're completely scattered and unorganized.
+JobReady solves a critical problem: **the world has unlimited free, high-quality learning resources (DeepLearning.AI, Hugging Face, freeCodeCamp, YouTube, official documentation ), but they're completely scattered and unorganized.**
 
 JobReady curates, organizes, and sequences these free resources into structured learning paths so learners can go from "confused about where to start" to "job-ready" in weeks, not months.
 
+---
 
+# 📌 The Real Problem Statement
 
+**The Resource Paradox:**
 
-📌 The Real Problem Statement
+The internet has **unlimited free, high-quality resources**:
 
-The Resource Paradox:
+- DeepLearning.AI short courses (free)
 
-The internet has unlimited free, high-quality resources:
+- Hugging Face Learn (free)
 
-•
-DeepLearning.AI short courses (free)
+- freeCodeCamp (free)
 
-•
-Hugging Face Learn (free)
+- PyTorch official tutorials (free)
 
-•
-freeCodeCamp (free)
+- TensorFlow documentation (free)
 
-•
-PyTorch official tutorials (free)
+- YouTube channels (free)
 
-•
-TensorFlow documentation (free)
+- MIT OpenCourseWare (free)
 
-•
-YouTube channels (free)
+- Stanford CS courses (free)
 
-•
-MIT OpenCourseWare (free)
+- Official documentation everywhere (free)
 
-•
-Stanford CS courses (free)
+**But here's the crisis:** These resources are **completely scattered and unorganized.**
 
-•
-Official documentation everywhere (free)
+A beginner wanting to become an **AI Engineer** faces impossible questions:
 
-But here's the crisis: These resources are completely scattered and unorganized.
+- Which resource should I start with?
 
-A beginner wanting to become an AI Engineer faces impossible questions:
+- What's the optimal sequence?
 
-•
-Which resource should I start with?
+- After this course, what's next?
 
-•
-What's the optimal sequence?
+- Am I actually ready for a job?
 
-•
-After this course, what's next?
+- How do I know I'm not wasting time on the wrong resources?
 
-•
-Am I actually ready for a job?
+**The Result:** Learners jump randomly between courses, watch 10 different tutorials without a coherent path, waste 6-12 months, and never feel truly "job-ready."
 
-•
-How do I know I'm not wasting time on the wrong resources?
+**JobReady solves this:** It takes all these free, scattered resources and organizes them into a **clear, structured, sequenced learning path** for 160+ specialized tech roles.
 
-The Result: Learners jump randomly between courses, watch 10 different tutorials without a coherent path, waste 6-12 months, and never feel truly "job-ready."
+---
 
-JobReady solves this: It takes all these free, scattered resources and organizes them into a clear, structured, sequenced learning path for 160+ specialized tech roles.
+# 💡 The Solution
 
+JobReady is a **curation and organization platform** that:
 
+1. **Aggregates** free resources from trusted platforms (DeepLearning.AI, Hugging Face, freeCodeCamp, official docs, YouTube, universities)
 
+1. **Organizes** them by role (AI Engineer, Data Scientist, DevOps Engineer, etc.)
 
-💡 The Solution
+1. **Sequences** them into a logical 4-week learning path
 
-JobReady is a curation and organization platform that:
+1. **Validates** that all resources are active and accessible
 
-1.
-Aggregates free resources from trusted platforms (DeepLearning.AI, Hugging Face, freeCodeCamp, official docs, YouTube, universities)
+1. **Personalizes** the experience with an AI Study Assistant
 
-2.
-Organizes them by role (AI Engineer, Data Scientist, DevOps Engineer, etc.)
-
-3.
-Sequences them into a logical 4-week learning path
-
-4.
-Validates that all resources are active and accessible
-
-5.
-Personalizes the experience with an AI Study Assistant
-
-6.
-Ensures learners know exactly what to do, when to do it, and when they're job-ready
+1. **Ensures** learners know exactly what to do, when to do it, and when they're job-ready
 
 Users can now:
 
-•
-Browse 210+ specialized tech roles
+- Browse 210+ specialized tech roles
 
-•
-See the exact learning path for each role
+- See the exact learning path for each role
 
-•
-Follow a structured 4-week curriculum
+- Follow a structured 4-week curriculum
 
-•
-Access validated, free resources in the right sequence
+- Access validated, free resources in the right sequence
 
-•
-Chat with an AI Study Assistant for help
+- Chat with an AI Study Assistant for help
 
-•
-Track progress and know when they're job-ready
+- Track progress and know when they're job-ready
 
+---
 
+# ✨ Features
 
+## 🎯 Technology Domain Explorer
 
-✨ Features
+- Browse 20 tech domains (AI, Data Science, Cloud, DevOps, Frontend, Backend, etc.)
 
-🎯 Technology Domain Explorer
+- Premium dark UI with modern card layouts
 
-•
-Browse 20 tech domains (AI, Data Science, Cloud, DevOps, Frontend, Backend, etc.)
+- Search functionality
 
-•
-Premium dark UI with modern card layouts
+- Organized by industry demand and career potential
 
-•
-Search functionality
+---
 
-•
-Organized by industry demand and career potential
-
-
-
-
-👨‍💻 Career Role Browser
+## 👨‍💻 Career Role Browser
 
 Each domain contains 160+ specialized roles including:
 
-•
-AI Engineer
+- AI Engineer
 
-•
-Machine Learning Engineer
+- Machine Learning Engineer
 
-•
-Prompt Engineer
+- Prompt Engineer
 
-•
-LLM Engineer
+- LLM Engineer
 
-•
-Data Scientist
+- Data Scientist
 
-•
-DevOps Engineer
+- DevOps Engineer
 
-•
-Cloud Architect
+- Cloud Architect
 
-•
-Full Stack Developer
+- Full Stack Developer
 
-•
-and many more...
+- and many more...
 
 Each role includes:
 
-•
-Estimated learning duration (4 weeks)
+- Estimated learning duration (4 weeks)
 
-•
-Difficulty level
+- Difficulty level
 
-•
-Industry outlook and job market demand
+- Industry outlook and job market demand
 
-•
-Complete 4-week learning modules
+- Complete 4-week learning modules
 
+---
 
-
-
-📚 Weekly Learning Dashboard
+## 📚 Weekly Learning Dashboard
 
 Each learning path contains:
 
-•
-Weekly learning objectives
+- Weekly learning objectives
 
-•
-Curated, sequenced learning resources (all free)
+- Curated, sequenced learning resources (all free)
 
-•
-Learning checklist
+- Learning checklist
 
-•
-Progress tracking
+- Progress tracking
 
-•
-Study hour logging
+- Study hour logging
 
-•
-Certification upon completion
+- Certification upon completion
 
+---
 
+## 🤖 AI Study Assistant
 
+JobReady integrates **Google Agent Development Kit (ADK)** to power an intelligent AI Study Assistant that:
 
-🤖 AI Study Assistant
+- Understands your current role and week of learning
 
-JobReady integrates Google Agent Development Kit (ADK) to power an intelligent AI Study Assistant that:
+- Answers curriculum-related questions in real-time
 
-•
-Understands your current role and week of learning
+- Explains difficult concepts in simple terms
 
-•
-Answers curriculum-related questions in real-time
+- Provides encouragement and study tips
 
-•
-Explains difficult concepts in simple terms
+- Keeps you motivated throughout your learning journey
 
-•
-Provides encouragement and study tips
+- Acts as a personal tutor available 24/7
 
-•
-Keeps you motivated throughout your learning journey
+---
 
-•
-Acts as a personal tutor available 24/7
-
-
-
-
-✅ Resource Validation System
+## ✅ Resource Validation System
 
 Broken educational resources destroy the learning experience.
 
 JobReady includes an intelligent resource validation system that:
 
-•
-Automatically checks if all resources are active and accessible
+- Automatically checks if all resources are active and accessible
 
-•
-Detects broken links before learners encounter them
+- Detects broken links before learners encounter them
 
-•
-Swaps broken resources with verified alternatives
+- Swaps broken resources with verified alternatives
 
-•
-Prioritizes official documentation and trusted platforms
+- Prioritizes official documentation and trusted platforms
 
-•
-Ensures learners never waste time on dead links
+- Ensures learners never waste time on dead links
 
+---
 
-
-
-🌙 Premium UI/UX
+## 🌙 Premium UI/UX
 
 The interface was designed with inspiration from:
 
-•
-Linear
+- Linear
 
-•
-Coursera
+- Coursera
 
-•
-Stripe
+- Stripe
 
-•
-Vercel
+- Vercel
 
 Features include:
 
-•
-Premium dark theme
+- Premium dark theme
 
-•
-Modern glassmorphism
+- Modern glassmorphism
 
-•
-Responsive layouts
+- Responsive layouts
 
-•
-Consistent typography
+- Consistent typography
 
-•
-Accent-based color system
+- Accent-based color system
 
-•
-Interactive cards
+- Interactive cards
 
-•
-Timeline-based learning dashboard
+- Timeline-based learning dashboard
 
+---
 
-
-
-🧠 AI Features Deep Dive
+# 🧠 AI Features Deep Dive
 
 JobReady uses intelligent AI agents to create a seamless, personalized learning experience:
 
-1. Study Assistant Agent
+## 1. Study Assistant Agent
 
-What it does: An intelligent AI tutor powered by Google ADK and Gemini 1.5 Flash, embedded directly in the learning dashboard.
+**What it does:** An intelligent AI tutor powered by Google ADK and Gemini 1.5 Flash, embedded directly in the learning dashboard.
 
-Capabilities:
+**Capabilities:**
 
-•
-Context-Aware Responses: Understands your current role, week, and learning objectives
+- **Context-Aware Responses**: Understands your current role, week, and learning objectives
 
-•
-Concept Explanation: Breaks down complex technical topics into simple, digestible explanations
+- **Concept Explanation**: Breaks down complex technical topics into simple, digestible explanations
 
-•
-Real-Time Guidance: Answers curriculum-related questions instantly without going off-topic
+- **Real-Time Guidance**: Answers curriculum-related questions instantly without going off-topic
 
-•
-Motivation & Support: Provides encouragement and study tips to keep you engaged
+- **Motivation & Support**: Provides encouragement and study tips to keep you engaged
 
-•
-Personalized Learning: Tailors explanations based on your background and skill level
+- **Personalized Learning**: Tailors explanations based on your background and skill level
 
-Example Interaction:
+**Example Interaction:**
 
-•
-You: "I don't understand backpropagation"
+- You: "I don't understand backpropagation"
 
-•
-Study Assistant: Explains the concept in simple terms with Python examples, then contextualizes it to your current learning path
+- Study Assistant: Explains the concept in simple terms with Python examples, then contextualizes it to your current learning path
 
-•
-Result: You stay motivated and on track
+- Result: You stay motivated and on track
 
+---
 
+## 2. Resource Validator
 
+**What it does:** Automatically validates all learning resources in the curriculum to ensure they're active and accessible.
 
-2. Resource Validator
+**How it works:**
 
-What it does: Automatically validates all learning resources in the curriculum to ensure they're active and accessible.
+- Performs HTTP health checks on all resource URLs
 
-How it works:
+- Maintains a status cache to track resource availability
 
-•
-Performs HTTP health checks on all resource URLs
+- Identifies broken links before you encounter them
 
-•
-Maintains a status cache to track resource availability
+- Swaps broken resources with verified fallbacks from a pre-curated registry
 
-•
-Identifies broken links before you encounter them
+- Logs all changes for transparency
 
-•
-Swaps broken resources with verified fallbacks from a pre-curated registry
+**Key Features:**
 
-•
-Logs all changes for transparency
+- **Parallel Validation**: Checks multiple links simultaneously for speed
 
-Key Features:
+- **Smart Fallback Matching**: Selects replacement resources based on skill category and learning objectives
 
-•
-Parallel Validation: Checks multiple links simultaneously for speed
+- **Verified Resource Registry**: Prioritizes resources from trusted platforms (freeCodeCamp, HuggingFace, official documentation, universities, etc.)
 
-•
-Smart Fallback Matching: Selects replacement resources based on skill category and learning objectives
+- **Zero Dead Links**: You never encounter broken or unavailable resources
 
-•
-Verified Resource Registry: Prioritizes resources from trusted platforms (freeCodeCamp, HuggingFace, official documentation, universities, etc.)
+---
 
-•
-Zero Dead Links: You never encounter broken or unavailable resources
+## 3. AI Fallback Helper
 
+**What it does:** When all pre-curated fallbacks are exhausted, this agent uses Gemini to intelligently generate emergency replacement resources.
 
+**How it works:**
 
+- Analyzes the topic, learning objectives, and difficulty level
 
-3. AI Fallback Helper
+- Queries Gemini to generate a high-quality replacement resource
 
-What it does: When all pre-curated fallbacks are exhausted, this agent uses Gemini to intelligently generate emergency replacement resources.
+- Recommends stable, verified URLs from top-tier providers (MIT OpenCourseWare, Python Docs, PostgreSQL Tutorial, Docker Docs, etc.)
 
-How it works:
+- Caches the generated resource to avoid redundant API calls
 
-•
-Analyzes the topic, learning objectives, and difficulty level
+- Maintains a changelog for transparency
 
-•
-Queries Gemini to generate a high-quality replacement resource
+**Why it matters:**
 
-•
-Recommends stable, verified URLs from top-tier providers (MIT OpenCourseWare, Python Docs, PostgreSQL Tutorial, Docker Docs, etc.)
+- Ensures learning continuity even if multiple resources become unavailable
 
-•
-Caches the generated resource to avoid redundant API calls
+- Guarantees you always have access to quality content
 
-•
-Maintains a changelog for transparency
+- Reduces manual maintenance overhead
 
-Why it matters:
+- Scales intelligently as the platform grows
 
-•
-Ensures learning continuity even if multiple resources become unavailable
+**Example:**
 
-•
-Guarantees you always have access to quality content
+- Original: "Advanced PyTorch Tutorial" (broken)
 
-•
-Reduces manual maintenance overhead
+- Fallback 1: "PyTorch Official Tutorials" (also broken)
 
-•
-Scales intelligently as the platform grows
+- Fallback 2: "freeCodeCamp PyTorch Course" (also broken)
 
-Example:
+- AI Fallback Helper: Generates "Python Docs - PyTorch API Reference" as emergency replacement
 
-•
-Original: "Advanced PyTorch Tutorial" (broken)
+- Result: You continue learning without interruption
 
-•
-Fallback 1: "PyTorch Official Tutorials" (also broken)
+---
 
-•
-Fallback 2: "freeCodeCamp PyTorch Course" (also broken)
+# 🚀 Key Innovation
 
-•
-AI Fallback Helper: Generates "Python Docs - PyTorch API Reference" as emergency replacement
+JobReady's competitive advantage lies in its unique approach to **organizing free resources into structured career paths**:
 
-•
-Result: You continue learning without interruption
+## 1. Comprehensive Hardcoded Curriculum Database
 
+- **160+ Specialized Roles**: Covering AI, Data Science, Cloud, DevOps, Frontend, Backend, and more
 
+- **559KB of Structured Content**: A carefully curated, version-controlled curriculum database
 
+- **4-Week Learning Paths**: Each role includes a complete 4-week learning journey with weekly objectives and resources
 
-🚀 Key Innovation
+- **All Free Resources**: Aggregated from DeepLearning.AI, Hugging Face, freeCodeCamp, PyTorch, TensorFlow, Stanford, MIT, Harvard, NVIDIA, Google, Microsoft, and official documentation
 
-JobReady's competitive advantage lies in its unique approach to organizing free resources into structured career paths:
+- **Skill Dependencies**: Intelligent skill graph ensures prerequisites are taught before advanced topics
 
-1. Comprehensive Hardcoded Curriculum Database
+- **Sequenced Learning**: Resources are ordered logically so you know exactly what to do each week
 
-•
-160+ Specialized Roles: Covering AI, Data Science, Cloud, DevOps, Frontend, Backend, and more
+## 2. Intelligent Resource Management
 
-•
-559KB of Structured Content: A carefully curated, version-controlled curriculum database
+- **Automatic Validation**: Continuous health checks ensure resources remain accessible
 
-•
-4-Week Learning Paths: Each role includes a complete 4-week learning journey with weekly objectives and resources
+- **Smart Fallback System**: Multi-tier fallback strategy (pre-curated → database → AI-generated)
 
-•
-All Free Resources: Aggregated from DeepLearning.AI, Hugging Face, freeCodeCamp, PyTorch, TensorFlow, Stanford, MIT, Harvard, NVIDIA, Google, Microsoft, and official documentation
+- **Zero Broken Links**: You never encounter dead resources
 
-•
-Skill Dependencies: Intelligent skill graph ensures prerequisites are taught before advanced topics
+- **Transparent Changelog**: All resource changes are logged and traceable
 
-•
-Sequenced Learning: Resources are ordered logically so you know exactly what to do each week
+- **Quality Assurance**: Every resource is verified before being added to the curriculum
 
-2. Intelligent Resource Management
+## 3. AI-Powered Personalization
 
-•
-Automatic Validation: Continuous health checks ensure resources remain accessible
+- **Study Assistant Agent**: Real-time, context-aware AI tutor
 
-•
-Smart Fallback System: Multi-tier fallback strategy (pre-curated → database → AI-generated)
+- **Google ADK Integration**: Enterprise-grade agent orchestration
 
-•
-Zero Broken Links: You never encounter dead resources
+- **Gemini 1.5 Flash**: Fast, reliable, cost-effective LLM inference
 
-•
-Transparent Changelog: All resource changes are logged and traceable
+- **Scalable Architecture**: Handles thousands of concurrent learners with personalized experiences
 
-•
-Quality Assurance: Every resource is verified before being added to the curriculum
+---
 
-3. AI-Powered Personalization
+# 🏗 Architecture
 
-•
-Study Assistant Agent: Real-time, context-aware AI tutor
-
-•
-Google ADK Integration: Enterprise-grade agent orchestration
-
-•
-Gemini 1.5 Flash: Fast, reliable, cost-effective LLM inference
-
-•
-Scalable Architecture: Handles thousands of concurrent learners with personalized experiences
-
-
-
-
-🏗 Architecture
-
-Plain Text
-
-
+```
                 User
 
                   │
@@ -542,59 +409,45 @@ Plain Text
                   │
 
       SQLite User Persistence
+```
 
+---
 
+# 🛠 Technologies Used
 
+## Frontend
 
+- Streamlit
 
+- HTML/CSS
 
-🛠 Technologies Used
+- Custom CSS Styling
 
-Frontend
+## Backend
 
-•
-Streamlit
+- Python
 
-•
-HTML/CSS
+## AI
 
-•
-Custom CSS Styling
+- Google Agent Development Kit (ADK)
 
-Backend
+- Google Gemini 1.5 Flash
 
-•
-Python
+## Database
 
-AI
+- SQLite
 
-•
-Google Agent Development Kit (ADK)
+- JSON
 
-•
-Google Gemini 1.5 Flash
+## Deployment
 
-Database
+- Streamlit Cloud
 
-•
-SQLite
+---
 
-•
-JSON
+# 📂 Project Structure
 
-Deployment
-
-•
-Streamlit Cloud
-
-
-
-
-📂 Project Structure
-
-Plain Text
-
-
+```
 JobReady/
 
 ├── database/
@@ -616,124 +469,87 @@ JobReady/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+```
 
+---
 
-
-
-
-
-⚙️ Installation
+# ⚙️ Installation
 
 Clone the repository:
 
-Bash
-
-
+```bash
 git clone https://github.com/tariqmarium6-ux/JobReady.git
-
-
+```
 
 Enter the project directory:
 
-Bash
-
-
+```bash
 cd JobReady
-
-
+```
 
 Install dependencies:
 
-Bash
-
-
+```bash
 pip install -r requirements.txt
+```
 
+Create a `.env` file containing:
 
-
-Create a .env file containing:
-
-Plain Text
-
-
+```
 GEMINI_API_KEY=your_key
 GROQ_API_KEY=your_key
-
-
+```
 
 Run the application:
 
-Bash
-
-
+```bash
 streamlit run src/app.py
+```
 
+---
 
+# ☁ Deployment
 
+The application is containerized using Docker and deployed on **Streamlit Cloud**.
 
+---
 
+# 📸 Screenshots
 
-☁ Deployment
+- [Home Screen](https://github.com/tariqmarium6-ux/JobReady/blob/plan/skillbridge-ai/homescreen.png)
 
-The application is containerized using Docker and deployed on Streamlit Cloud.
+- [Domain Browser](https://github.com/tariqmarium6-ux/JobReady/blob/plan/skillbridge-ai/domain.png)
 
+- [Career Role Selection](https://github.com/tariqmarium6-ux/JobReady/blob/plan/skillbridge-ai/careerrole.png)
 
+- [Learner Dashboard](https://github.com/tariqmarium6-ux/JobReady/blob/plan/skillbridge-ai/dashboard.png)
 
+- [AI Study Assistant](https://github.com/tariqmarium6-ux/JobReady/blob/plan/skillbridge-ai/assistant.png)
 
-📸 Screenshots
+---
 
-•
-Home Screen
+# 🎯 Future Improvements
 
-•
-Domain Browser
+- Personalized skill assessment based on resume
 
-•
-Career Role Selection
+- Dynamic curriculum generation
 
-•
-Learner Dashboard
+- Live job market integration
 
-•
-AI Study Assistant
+- Certifications & achievements
 
+- Community learning and peer support
 
+- Resume-based role recommendations
 
+---
 
-🎯 Future Improvements
+# 👥 Authors
 
-•
-Personalized skill assessment based on resume
+**Marium Tariq**
 
-•
-Dynamic curriculum generation
+---
 
-•
-Live job market integration
-
-•
-Certifications & achievements
-
-•
-Community learning and peer support
-
-•
-Resume-based role recommendations
-
-
-
-
-👥 Authors
-
-Marium Tariq
-
-
-
-
-📄 License
+# 📄 License
 
 This project is intended for educational and hackathon purposes.
-
-
-
-
