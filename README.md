@@ -1,4 +1,5 @@
 # 🚀 JobReady
+link:https://jobready-xkwpqzwvtwevbls8wqhclw.streamlit.app/
 
 > **Curated AI & Tech Learning Paths for Career Readiness**
 
