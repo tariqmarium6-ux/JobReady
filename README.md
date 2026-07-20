@@ -206,8 +206,8 @@ Features include:
 
 ## Deployment
 
-* Docker
-* Google Cloud Run
+* Streamlit
+
 
 ---
 
@@ -276,17 +276,7 @@ streamlit run src/app.py
 
 # ☁ Deployment
 
-The application is containerized using Docker and deployed on **Google Cloud Run**.
-
-Deployment workflow:
-
-1. Build Docker image
-2. Push container
-3. Deploy to Cloud Run
-4. Configure environment variables
-5. Launch application
-
----
+The application is containerized using Docker and deployed on **streamlit**.
 
 # 📸 Screenshots
 
@@ -312,9 +302,6 @@ Deployment workflow:
 # 👥 Authors
 
 **Marium Tariq**
-**Farzeen Fatima**
-
-Developed for the Kaggle X Google capstone project
 
 ---
 
