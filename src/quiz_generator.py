@@ -247,3 +247,8 @@ def get_weekly_quiz_sync(role_name: str, week_num: int, week_goal: str, objectiv
         
     return fallback_quiz
 
+async def generate_weekly_quiz(role_name: str, week_num: int, week_goal: str, objectives: list, db_provider) -> dict:
+    """Async wrapper for backward compatibility."""
+    return get_weekly_quiz_sync(role_name, week_num, week_goal, objectives, db_provider)
+
+
