@@ -17,7 +17,7 @@ except Exception as _agent_import_err:
 from sqlite_provider import SQLiteProvider
 from firestore_provider import FirestoreProvider
 from oauth_handler import is_oauth_configured, get_google_auth_url, handle_oauth_callback
-from quiz_generator import generate_weekly_quiz
+from quiz_generator import generate_weekly_quiz, get_weekly_quiz_sync
 from badges import evaluate_badges, BADGE_DESCRIPTIONS, COMPLETION_BADGES
 
 try:
@@ -625,7 +625,7 @@ st.markdown("""
         color: #A78BFA !important;
     }
     
-    /* Popover (Weekly Quiz box) */
+    /* Popover (Weekly Quiz box) & Radio text visibility */
     [data-testid="stPopoverBody"],
     div[data-baseweb="popover"] > div,
     [data-testid="stDialog"] > div {
@@ -633,6 +633,18 @@ st.markdown("""
         border: 1px solid #252837 !important;
         border-radius: 12px !important;
         color: #FFFFFF !important;
+    }
+    [data-testid="stPopoverBody"] *,
+    [data-testid="stRadio"] label,
+    [data-testid="stRadio"] label p,
+    [data-testid="stRadio"] label span,
+    [data-testid="stRadio"] div,
+    div[role="radiogroup"] * {
+        color: #FFFFFF !important;
+    }
+    div[data-testid="stRadio"] label:hover p,
+    div[data-testid="stRadio"] label:hover span {
+        color: #A78BFA !important;
     }
     /* Expander content area — transparent so inner divs show */
     [data-testid="stExpander"] > div > div:last-child {
@@ -1394,34 +1406,11 @@ else:
    letter-spacing:-0.5px; font-family:"Outfit",sans-serif;'>LEARNER DASHBOARD</h1>
 """, unsafe_allow_html=True)
 
-        # ── Main layout: center content (5) + AI assistant (2)
-        col_main, col_ai = st.columns([5, 2], gap="large")
+        # ── Stat cards row: 3 columns aligned side-by-side
+        stat_col1, stat_col2, stat_col3 = st.columns([1, 1, 1.2], gap="medium")
         
-        with col_main:
-            
-            # Render quiet success banners for completed weeks
-            newly_completed = st.session_state.completed_weeks - st.session_state.completed_weeks_notified
-            for cw_idx in list(newly_completed):
-                st.markdown(f"""
-<div style='background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.25); border-radius:12px; padding:16px 20px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between; gap:16px;'>
-    <div style='display:flex; align-items:center; gap:12px;'>
-        <span style='font-size:22px;'>🏆</span>
-        <div>
-            <div style='font-size:14px; font-weight:700; color:#10B981;'>Week {cw_idx + 1} Fully Completed!</div>
-            <div style='font-size:12px; color:rgba(255,255,255,0.65); margin-top:2px;'>Fantastic job! You've completed all study materials, weekly projects, and passed the quiz. Keep up the great momentum!</div>
-        </div>
-    </div>
-</div>
-""", unsafe_allow_html=True)
-                if st.button(f"Dismiss Notification for Week {cw_idx + 1}", key=f"dismiss_notify_{cw_idx}"):
-                    st.session_state.completed_weeks_notified.add(cw_idx)
-                    st.rerun()
-            
-            # ── Stat cards row
-            stat_col1, stat_col2 = st.columns(2, gap="medium")
-            
-            with stat_col1:
-                st.markdown(f"""
+        with stat_col1:
+            st.markdown(f"""
 <div style='background:#151827; border:1px solid #252837; border-radius:14px; padding:24px 28px; height:150px; display:flex; flex-direction:column; justify-content:space-between;'>
     <span style='font-size:12px; color:#FFFFFF; font-weight:700; text-transform:uppercase; letter-spacing:0.08em;'>COURSE PROGRESS</span>
     <div style='display:flex; align-items:center; gap:20px; margin-top:20px;'>
@@ -1434,16 +1423,15 @@ else:
 </div>
 """, unsafe_allow_html=True)
 
-            with stat_col2:
-                # Calculate bars for the last 7 days study hours
-                bars = []
-                for hrs in st.session_state.study_history:
-                    color = "#A78BFA" if hrs > 0 else "rgba(255,255,255,0.08)"
-                    height = max(4, min(20, int(hrs * 5)))
-                    bars.append(f"<div style='width: 12px; height: {height}px; background: {color}; border-radius: 2px;' title='{hrs} hrs'></div>")
-                bars_html = "".join(bars)
-                
-                st.markdown(f"""
+        with stat_col2:
+            bars = []
+            for hrs in st.session_state.study_history:
+                color = "#A78BFA" if hrs > 0 else "rgba(255,255,255,0.08)"
+                height = max(4, min(20, int(hrs * 5)))
+                bars.append(f"<div style='width: 12px; height: {height}px; background: {color}; border-radius: 2px;' title='{hrs} hrs'></div>")
+            bars_html = "".join(bars)
+            
+            st.markdown(f"""
 <div style='background:#151827; border:1px solid #252837; border-radius:14px; padding:20px 24px; height:150px; display:flex; flex-direction:column; justify-content:space-between;'>
     <div style='display:flex; justify-content:space-between; align-items:flex-start;'>
         <div>
@@ -1461,27 +1449,81 @@ else:
     <span style='font-size:11px; color:rgba(255,255,255,0.4); margin-top:2px;'>Goal: 2 hrs today</span>
 </div>
 """, unsafe_allow_html=True)
-                st.markdown("<div style='margin-top:-50px; padding: 0 24px; position:relative; z-index:10;'>", unsafe_allow_html=True)
-                if st.button("🕒 Log 1 Hour Study", key="add_study_hr_btn", use_container_width=True, type="primary"):
-                    st.session_state.study_hours += 1.0
-                    st.session_state.study_history[-1] += 1.0
-                    trigger_progress_save()
-                    st.rerun()
-                st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown("<div style='margin-top:-50px; padding: 0 24px; position:relative; z-index:10;'>", unsafe_allow_html=True)
+            if st.button("🕒 Log 1 Hour Study", key="add_study_hr_btn", use_container_width=True, type="primary"):
+                st.session_state.study_hours += 1.0
+                st.session_state.study_history[-1] += 1.0
+                trigger_progress_save()
+                st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
 
-            st.markdown("<br>", unsafe_allow_html=True)
+        with stat_col3:
+            st.markdown(f"""
+<div style='background:#151827; border:1px solid #252837; border-radius:14px; padding:20px 24px; height:150px; display:flex; flex-direction:column; justify-content:space-between;'>
+    <div style='display:flex; align-items:center; gap:10px;'>
+        <div style='width:32px; height:32px; border-radius:8px; background:rgba(108,99,255,0.15); display:flex; align-items:center; justify-content:center; font-size:16px;'>🤖</div>
+        <span style='font-size:11px; font-weight:700; color:#A78BFA; text-transform:uppercase; letter-spacing:0.08em;'>AI STUDY ASSISTANT</span>
+    </div>
+    <div style='font-size:12px; color:rgba(255,255,255,0.7); margin-top:4px; line-height:1.4;'>Ask questions about this week's goals, concepts, or practice tasks.</div>
+</div>
+""", unsafe_allow_html=True)
+            st.markdown("<div style='margin-top:-50px; padding: 0 20px; position:relative; z-index:10;'>", unsafe_allow_html=True)
+            with st.popover("💬 Chat with AI Assistant", use_container_width=True):
+                st.markdown("**🤖 AI Study Assistant**")
+                if st.session_state.chat_history:
+                    for chat in st.session_state.chat_history[-6:]:
+                        if chat["role"] == "user":
+                            st.markdown(f"**You:** {chat['text']}")
+                        else:
+                            st.markdown(f"**AI:** {chat['text']}")
+                q_text = st.text_input("Ask a question...", key="ai_top_chat_input", label_visibility="collapsed")
+                if st.button("Send Query ✈", key="ai_top_send_btn", use_container_width=True, type="primary"):
+                    if q_text.strip():
+                        st.session_state.chat_history.append({"role": "user", "text": q_text})
+                        context_summary = f"Role: {role_name}. Completed weeks: {list(st.session_state.completed_weeks)}."
+                        with st.spinner("Thinking..."):
+                            try:
+                                if hasattr(study_assistant_agent, "ask"):
+                                    reply = study_assistant_agent.ask(q_text, context_summary)
+                                else:
+                                    reply = "AI Assistant ready."
+                                st.session_state.chat_history.append({"role": "assistant", "text": reply})
+                            except Exception as ex:
+                                st.session_state.chat_history.append({"role": "assistant", "text": f"Error: {ex}"})
+                        st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        # Render quiet success banners for completed weeks
+        newly_completed = st.session_state.completed_weeks - st.session_state.completed_weeks_notified
+        for cw_idx in list(newly_completed):
+            st.markdown(f"""
+<div style='background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.25); border-radius:12px; padding:16px 20px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between; gap:16px;'>
+    <div style='display:flex; align-items:center; gap:12px;'>
+        <span style='font-size:22px;'>🏆</span>
+        <div>
+            <div style='font-size:14px; font-weight:700; color:#10B981;'>Week {cw_idx + 1} Fully Completed!</div>
+            <div style='font-size:12px; color:rgba(255,255,255,0.65); margin-top:2px;'>Fantastic job! You've completed all study materials, weekly projects, and passed the quiz. Keep up the great momentum!</div>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+            if st.button(f"Dismiss Notification for Week {cw_idx + 1}", key=f"dismiss_notify_{cw_idx}"):
+                st.session_state.completed_weeks_notified.add(cw_idx)
+                st.rerun()
             
-            if completed_count == 0 and st.session_state.study_hours == 0.0:
-                has_bookmark = len(st.session_state.bookmarks) > 0
-                has_materials = len(st.session_state.completed_materials) > 0
-                
-                bookmark_check = "✔" if has_bookmark else "○"
-                materials_check = "✔" if has_materials else "○"
-                
-                bookmark_style = "text-decoration: line-through; color: rgba(255,255,255,0.4);" if has_bookmark else "color: #FFFFFF;"
-                materials_style = "text-decoration: line-through; color: rgba(255,255,255,0.4);" if has_materials else "color: #FFFFFF;"
-                
-                st.markdown(f"""
+        if completed_count == 0 and st.session_state.study_hours == 0.0:
+            has_bookmark = len(st.session_state.bookmarks) > 0
+            has_materials = len(st.session_state.completed_materials) > 0
+            
+            bookmark_check = "✔" if has_bookmark else "○"
+            materials_check = "✔" if has_materials else "○"
+            
+            bookmark_style = "text-decoration: line-through; color: rgba(255,255,255,0.4);" if has_bookmark else "color: #FFFFFF;"
+            materials_style = "text-decoration: line-through; color: rgba(255,255,255,0.4);" if has_materials else "color: #FFFFFF;"
+            
+            st.markdown(f"""
 <div style='background: rgba(108,99,255,0.03); border: 1px dashed rgba(108,99,255,0.3); border-radius: 14px; padding: 20px 24px; margin-bottom: 24px;'>
     <h3 style='margin: 0 0 10px 0; font-size: 15px; color: #A78BFA; font-family: "Outfit", sans-serif; font-weight: 700;'>🚀 Your Journey Starts Here: Onboarding Checklist</h3>
     <p style='font-size: 12px; color: rgba(255,255,255,0.6); margin: 0 0 16px 0; line-height: 1.4;'>Complete these quick onboarding steps to kick off your custom roadmap and build learning habits!</p>
@@ -1596,16 +1638,8 @@ else:
                                 is_emergency = v_res.get("is_emergency", False)
                                 change_log  = v_res.get("change_log", "")
                                 
-                                # Resolve badges
-                                p_badge_color = "#6C63FF" if prov_type == "Official Docs" else ("#10B981" if prov_type == "University" else "#A78BFA")
-                                p_badge_icon = "🏛" if prov_type == "Official Docs" else ("🎓" if prov_type == "University" else "💼")
-                                
                                 # Sequence Badge
                                 seq_num = r_idx + 1
-                                if r_idx == 0:
-                                    seq_tag = "<span style='background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#10B981; font-size:10px; font-weight:700; padding:2px 6px; border-radius:4px;'>Start here</span>"
-                                else:
-                                    seq_tag = "<span style='background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.15); color:rgba(255,255,255,0.6); font-size:10px; font-weight:700; padding:2px 6px; border-radius:4px;'>After completing</span>"
                                 
                                 st.markdown(f"""
 <div style='background:#1A1D2E; border:1px solid #252837; border-radius:12px; padding:16px; margin:12px 0;'>
@@ -1670,11 +1704,7 @@ else:
                                 st.warning(f"Max attempts reached. Best score: {best_score}/5.")
                             else:
                                 st.markdown(f"**Attempt {attempts+1}/3 — Week {week_num}: {week_goal}**")
-                                import asyncio
-                                loop = asyncio.new_event_loop()
-                                asyncio.set_event_loop(loop)
-                                quiz_data = loop.run_until_complete(generate_weekly_quiz(role_name, week_num, week_goal, objectives, db_provider))
-                                loop.close()
+                                quiz_data = get_weekly_quiz_sync(role_name, week_num, week_goal, objectives, db_provider)
                                 questions    = quiz_data.get("questions", [])
                                 user_answers = []
                                 for q_idx, q_item in enumerate(questions):
@@ -1732,82 +1762,6 @@ else:
 - 👥 **Community Resources**: {pcts.get('Community', 0)}%
 """)
 
-        with col_ai:
-            st.markdown("""
-<div style='background:#151827; border:1px solid #252837; border-radius:14px; padding:22px 20px; margin-bottom:16px;'>
-    <div style='display:flex; align-items:center; gap:12px; margin-bottom:16px;'>
-        <div style='width:38px; height:38px; border-radius:10px; background:rgba(108,99,255,0.15); display:flex; align-items:center; justify-content:center; font-size:18px;'>🤖</div>
-        <span style='font-size:14px; font-weight:700; color:#A78BFA; text-transform:uppercase; letter-spacing:0.05em;'>AI STUDY ASSISTANT</span>
-    </div>
-    <p style='font-size:13px; color:rgba(255,255,255,0.7); margin:0 0 20px 0; line-height:1.5;'>Ask anything about this week's goals or resources.</p>
-</div>
-""", unsafe_allow_html=True)
-
-            # Chat history
-            if st.session_state.chat_history:
-                for chat in st.session_state.chat_history[-6:]:
-                    if chat["role"] == "user":
-                        st.markdown(f"""
-<div class='chat-bubble' style='background:rgba(108,99,255,0.12); border:1px solid rgba(108,99,255,0.2); border-radius:10px; padding:10px 12px; margin-bottom:8px;'>
-    <span style='font-size:11px; color:#A78BFA; font-weight:600;'>You</span>
-    <div style='margin:4px 0 0 0; color:#FFFFFF;'>{chat["text"]}</div>
-</div>
-""", unsafe_allow_html=True)
-                    else:
-                        st.markdown(f"""
-<div class='chat-bubble' style='background:#1A1D2E; border:1px solid #252837; border-radius:10px; padding:10px 12px; margin-bottom:8px;'>
-    <span style='font-size:11px; color:rgba(255,255,255,0.4); font-weight:600;'>🤖 Assistant</span>
-    <div style='margin:4px 0 0 0; color:rgba(255,255,255,0.8);'>{chat["text"]}</div>
-</div>
-""", unsafe_allow_html=True)
-
-            # Chat input processing
-            def handle_chat_submit():
-                val = st.session_state.get("mentor_chat_input", "")
-                if val.strip():
-                    st.session_state.chat_history.append({"role": "user", "text": val})
-                    st.session_state.pending_chat_query = val
-                    st.session_state.mentor_chat_input = ""
-
-            st.text_input("Ask a question...", placeholder="Ask a question...", key="mentor_chat_input", label_visibility="collapsed")
-            
-            if st.button("Send Query  ✈", key="send_chat_btn", use_container_width=True, type="primary", on_click=handle_chat_submit):
-                st.rerun()
-
-            # Process pending query
-            if st.session_state.get("pending_chat_query"):
-                query_val = st.session_state.pending_chat_query
-                st.session_state.pending_chat_query = ""
-                context_summary = f"Role: {role_name}. Completed weeks: {list(st.session_state.completed_weeks)}."
-                with st.spinner("Thinking..."):
-                    try:
-                        if hasattr(study_assistant_agent, "ask"):
-                            reply = study_assistant_agent.ask(query_val, context_summary)
-                        else:
-                            loop = asyncio.new_event_loop()
-                            asyncio.set_event_loop(loop)
-                            full_prompt = f"Context: {context_summary}\nQuery: {query_val}"
-                            runner = st.session_state.get("adk_runner")
-                            if not runner:
-                                from google.adk.runners import InMemoryRunner
-                                runner = InMemoryRunner(agent=study_assistant_agent, app_name="jobready")
-                                st.session_state.adk_runner = runner
-                            loop_session = loop.run_until_complete(runner.session_service.create_session(app_name="jobready", user_id="MARIUM_TARIQ"))
-                            from google.genai import types
-                            msg = types.Content(role="user", parts=[types.Part(text=full_prompt)])
-                            response_container = [""]
-                            async def fetch_res():
-                                async for event in runner.run_async(user_id="MARIUM_TARIQ", session_id=loop_session.id, new_message=msg) or []:
-                                    if event.content and event.content.parts:
-                                        for part in event.content.parts:
-                                            if part.text:
-                                                response_container[0] += part.text
-                            loop.run_until_complete(fetch_res())
-                            reply = response_container[0]
-                        st.session_state.chat_history.append({"role": "assistant", "text": reply})
-                    except Exception as ex:
-                        st.session_state.chat_history.append({"role": "assistant", "text": f"Error: {ex}"})
-                st.rerun()
 
 
 

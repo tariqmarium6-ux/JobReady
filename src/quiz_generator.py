@@ -134,10 +134,8 @@ async def query_llm(prompt):
             
     raise RuntimeError("Query failed after all retries.")
 
-async def generate_weekly_quiz(role_name: str, week_num: int, week_goal: str, objectives: list, db_provider) -> dict:
-    """Check cache, or generate exactly 5 multiple choice questions for the week's objectives."""
-    
-    # 1. Build prompt
+def get_weekly_quiz_sync(role_name: str, week_num: int, week_goal: str, objectives: list, db_provider) -> dict:
+    """Synchronous version of generate_weekly_quiz for safe, bulletproof execution inside Streamlit popovers."""
     prompt = f"""
     Generate exactly 5 multiple-choice questions for the following syllabus week:
     Career Roadmap: {role_name}
@@ -147,10 +145,10 @@ async def generate_weekly_quiz(role_name: str, week_num: int, week_goal: str, ob
 
     Requirements:
     1. Generate exactly 5 questions.
-    2. Assess ONLY what is covered in this specific week's goal and objectives. Do NOT ask outside this week's scope.
+    2. Assess ONLY what is covered in this specific week's goal and objectives.
     3. Each question must have exactly 4 choices (options).
-    4. Provide the 0-indexed correct_answer_index (0 for options[0], 1 for options[1], etc.).
-    5. Provide a detailed, pedagogical explanation explaining why the correct choice is right.
+    4. Provide the 0-indexed correct_answer_index.
+    5. Provide a detailed, pedagogical explanation.
 
     Your response must match the following JSON schema:
     {{
@@ -165,75 +163,87 @@ async def generate_weekly_quiz(role_name: str, week_num: int, week_goal: str, ob
     }}
     """
     
-    # 2. Compute prompt hash for versioned caching
     prompt_hash = hashlib.sha256(prompt.encode('utf-8')).hexdigest()
     
-    # 3. Check Cache
-    cached = db_provider.get_cached_quiz(role_name, week_num, prompt_hash)
-    if cached:
-        return cached
-
-    # 4. Generate via LLM
+    # 1. Check Cache
     try:
-        res_text = await query_llm(prompt)
-        cleaned = res_text.strip()
-        if cleaned.startswith("```"):
-            lines = cleaned.splitlines()
-            if lines[0].startswith("```"):
-                lines = lines[1:]
-            if lines[-1].startswith("```"):
-                lines = lines[:-1]
-            cleaned = "\n".join(lines).strip()
-            
-        start = cleaned.find("{")
-        end = cleaned.rfind("}") + 1
-        if start != -1 and end != -1:
-            cleaned = cleaned[start:end]
-            
-        quiz_data = json.loads(cleaned)
-        
-        # Verify schema
-        if "questions" in quiz_data and len(quiz_data["questions"]) == 5:
-            # Save to cache
-            db_provider.save_cached_quiz(role_name, week_num, prompt_hash, quiz_data)
-            return quiz_data
-    except Exception as e:
-        print(f"[ERROR]: Failed to generate LLM quiz for {role_name} Week {week_num}: {e}")
-        
-    # Static fallback in case of rate limits or failures (so app never breaks)
+        cached = db_provider.get_cached_quiz(role_name, week_num, prompt_hash)
+        if cached:
+            return cached
+    except Exception as _ce:
+        pass
+
+    # 2. Try synchronous LLM call (Groq)
+    g_key = _get_secret("GROQ_API_KEY")
+    if g_key:
+        try:
+            url = "https://api.groq.com/openai/v1/chat/completions"
+            headers = {"Authorization": f"Bearer {g_key}", "Content-Type": "application/json"}
+            payload = {
+                "model": "llama-3.3-70b-versatile",
+                "messages": [
+                    {"role": "system", "content": "You are a university assessment generator. Respond strictly with a raw JSON object containing the quiz questions."},
+                    {"role": "user", "content": prompt}
+                ],
+                "response_format": {"type": "json_object"},
+                "temperature": 0.2
+            }
+            with httpx.Client(timeout=15.0) as client:
+                res = client.post(url, json=payload, headers=headers)
+                if res.status_code == 200:
+                    res_json = res.json()
+                    cleaned = res_json["choices"][0]["message"]["content"].strip()
+                    start = cleaned.find("{")
+                    end = cleaned.rfind("}") + 1
+                    if start != -1 and end != -1:
+                        cleaned = cleaned[start:end]
+                    quiz_data = json.loads(cleaned)
+                    if "questions" in quiz_data and len(quiz_data["questions"]) == 5:
+                        db_provider.save_cached_quiz(role_name, week_num, prompt_hash, quiz_data)
+                        return quiz_data
+        except Exception as _ge:
+            print(f"[Quiz LLM Sync Warning]: {_ge}")
+
+    # 3. Fallback Quiz tailored to week
     fallback_quiz = {
         "questions": [
             {
-                "question": f"Which of the following is a primary objective of {role_name} during Week {week_num}?",
-                "options": [f"Master the core week goal: {week_goal}", "Build a random cloud database", "Optimize server security benchmarks", "Refactor the global UI styling parameters"],
+                "question": f"Which of the following is the primary goal of {role_name} in Week {week_num}?",
+                "options": [f"Master the core objective: {week_goal}", "Setup legacy database clusters", "Refactor server deployment scripts", "Modify global UI CSS parameters"],
                 "correct_answer_index": 0,
-                "explanation": f"The primary goal of this week is explicitly stated as: {week_goal}."
+                "explanation": f"The primary focus for this week is: {week_goal}."
             },
             {
-                "question": f"Which technology is most relevant to the weekly practice in Week {week_num}?",
-                "options": ["The tools specified in the weekly sequence", "An unrelated database engine", "An old legacy framework", "Browser console logs"],
+                "question": f"Which skill or methodology is emphasized in Week {week_num}'s learning plan?",
+                "options": [objectives[0] if objectives else "Core concept mastery", "Unrelated framework configuration", "Deprecated API integration", "Manual log parsing"],
                 "correct_answer_index": 0,
-                "explanation": "Aligning your tools with the roadmap objectives ensures high industry readiness."
+                "explanation": "Mastering the weekly learning objectives ensures maximum career readiness."
             },
             {
-                "question": "What is the primary benefit of completing this week's mini-project?",
-                "options": ["Adding clean portfolio value to your evolving GitHub repository", "Earning certificate credentials without coding", "Completing tasks in a sandbox console", "Skipping prerequisites check"],
+                "question": "What is the key benefit of completing this week's practice task?",
+                "options": ["Building practical hands-on portfolio experience", "Skipping prerequisite checks", "Earning badges without testing", "Disabling automatic link validation"],
                 "correct_answer_index": 0,
-                "explanation": "JobReady focuses on building an evolving repository to demonstrate real-world contributions."
+                "explanation": "Hands-on projects reinforce theoretical knowledge and build a verifiable portfolio."
             },
             {
-                "question": "How does the study pace slider affect the weekly curriculum layout?",
-                "options": ["It recalculates estimated weeks dynamically based on hours studied", "It changes the order of weekly modules", "It limits the maximum score of quizzes", "It unlocks all badges immediately"],
+                "question": "How does completing weekly progress milestones help your job readiness?",
+                "options": ["It validates core competencies and earns progress badges", "It resets the study pace slider", "It deletes cached quiz records", "It hides upcoming curriculum weeks"],
                 "correct_answer_index": 0,
-                "explanation": "Selecting a faster pace reduces the completion duration, making study times highly personalized."
+                "explanation": "Tracking milestones ensures consistent learning progress toward your career goal."
             },
             {
-                "question": "Which of these best describes the final capstone project?",
-                "options": ["A production-grade deployment demonstrating end-to-end readiness", "A short self-assessment quiz", "An isolated coding snippet", "A mock resume outline"],
+                "question": "What is the recommended approach when reviewing curated learning resources?",
+                "options": ["Follow resources sequentially and complete the practical exercises", "Skip all documentation links", "Only read the first 5 minutes of each video", "Rely exclusively on memorization"],
                 "correct_answer_index": 0,
-                "explanation": "A Capstone project is a large enterprise-level deployment designed to optimize recruiter interest."
+                "explanation": "Sequential study combined with active practice yields the highest skill retention."
             }
         ]
     }
     
+    try:
+        db_provider.save_cached_quiz(role_name, week_num, prompt_hash, fallback_quiz)
+    except Exception:
+        pass
+        
     return fallback_quiz
+
