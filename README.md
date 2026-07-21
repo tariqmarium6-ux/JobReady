@@ -2,7 +2,7 @@
 
 ## Presentation and Overview
 
-**Job ready link**: [https://jobready-xkwpqzwvtwevbls8wqhclw.streamlit.app/](https://jobready-xkwpqzwvtwevbls8wqhclw.streamlit.app/)
+**Job ready link**: https://jobready-804.streamlit.app/
 
 Explore the complete architectural breakdown and overview of the JobReady system
 
