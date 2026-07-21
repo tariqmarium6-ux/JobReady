@@ -67,20 +67,50 @@ You are part of the JobReady platform. The platform's mission is to help people 
         return self._model
 
     def ask(self, query, context=""):
-        """Ask the Study Assistant a question"""
-        try:
-            full_prompt = f"{context}\n\nLearner Question: {query}" if context else query
-            model = self._get_model()
-            response = model.generate_content(
-                full_prompt,
-                generation_config=genai.types.GenerationConfig(
-                    temperature=0.7,
-                    max_output_tokens=500,
+        """Ask the Study Assistant a question with automatic model fallback."""
+        key = _get_secret("GEMINI_API_KEY") or _get_secret("gemini_key")
+        if not key:
+            multi = _get_secret("GEMINI_API_KEYS")
+            if multi:
+                key = multi.split(",")[0].strip()
+        if key:
+            try:
+                genai.configure(api_key=key)
+            except Exception:
+                pass
+
+        full_prompt = f"{context}\n\nLearner Question: {query}" if context else query
+
+        models_to_try = [
+            'gemini-1.5-flash',
+            'gemini-1.5-flash-latest',
+            'gemini-2.5-flash',
+            'gemini-2.0-flash',
+            'gemini-1.5-pro',
+            'gemini-pro'
+        ]
+
+        last_err = None
+        for m_name in models_to_try:
+            try:
+                m = genai.GenerativeModel(
+                    model_name=m_name,
+                    system_instruction=self.system_instruction
                 )
-            )
-            return response.text
-        except Exception as e:
-            return f"Error: {str(e)}"
+                res = m.generate_content(
+                    full_prompt,
+                    generation_config=genai.types.GenerationConfig(
+                        temperature=0.7,
+                        max_output_tokens=500,
+                    )
+                )
+                if res and res.text:
+                    return res.text
+            except Exception as e:
+                last_err = e
+                continue
+
+        return f"Error: {last_err}"
 
 # Initialize the Study Assistant Agent
 study_assistant_agent = StudyAssistantAgent()
