@@ -6,16 +6,32 @@ import time
 import httpx
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables (works locally)
 load_dotenv()
 
-groq_api_key = os.getenv("GROQ_API_KEY", "")
-gemini_api_key = os.getenv("GEMINI_API_KEY", "")
+def _get_secret(key: str) -> str:
+    """Read from env first (local .env), then fall back to st.secrets (Streamlit Cloud)."""
+    val = os.environ.get(key, "")
+    if not val:
+        try:
+            import streamlit as st
+            val = st.secrets.get(key, "")
+        except Exception:
+            pass
+    return val or ""
+
+groq_api_key = _get_secret("GROQ_API_KEY")
+gemini_api_key = _get_secret("GEMINI_API_KEY")
 
 # We only use valid Gemini API keys starting with AIzaSy for REST
 GEMINI_KEYS = [k.strip() for k in [gemini_api_key] if k and k.startswith("AIzaSy")]
 if not GEMINI_KEYS:
-    # Check if there are other keys configured or fallback
+    # Try to read multiple keys from GEMINI_API_KEYS env variable
+    multi_keys_raw = _get_secret("GEMINI_API_KEYS")
+    if multi_keys_raw:
+        GEMINI_KEYS = [k.strip() for k in multi_keys_raw.split(",") if k.strip().startswith("AIzaSy")]
+if not GEMINI_KEYS:
+    # Final hardcoded fallback keys
     GEMINI_KEYS = ["AIzaSyBbsPI0VypOYJtWpHGZIJlhBTyI3sGiCI8", "AIzaSyAZu_fVAbzSGenWipeZmkXnThxS9jD9jPM"]
 
 GEMINI_KEY_COOLDOWN = {key: 0.0 for key in GEMINI_KEYS}

@@ -2,21 +2,37 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Load environment variables
+# Load environment variables from root .env (works locally)
 load_dotenv()
 
-# Initialize Gemini API
-gemini_key = os.environ.get("GEMINI_API_KEY")
+def _get_secret(key: str) -> str:
+    """Read from env first (local .env), then fall back to st.secrets (Streamlit Cloud)."""
+    val = os.environ.get(key, "")
+    if not val:
+        try:
+            import streamlit as st
+            val = st.secrets.get(key, "")
+        except Exception:
+            pass
+    return val or ""
+
+# Initialize Gemini API key with fallbacks
+gemini_key = _get_secret("GEMINI_API_KEY") or _get_secret("gemini_key")
 if not gemini_key:
-    print("\n[System Alert]: Could not find GEMINI_API_KEY in your environment variables.\n")
+    multi = _get_secret("GEMINI_API_KEYS")
+    if multi:
+        gemini_key = multi.split(",")[0].strip()
+
+if not gemini_key:
+    print("\n[System Alert]: Could not find GEMINI_API_KEY in environment variables or Streamlit secrets.\n")
 else:
     genai.configure(api_key=gemini_key)
 
-# Create a simple Study Assistant Agent using Gemini
+# Create a simple, robust Study Assistant Agent using Gemini
 class StudyAssistantAgent:
     def __init__(self):
         self.name = "study_assistant_agent"
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self._model = None
         self.system_instruction = """You are JobReady's AI Study Assistant — a friendly, expert career tutor embedded inside the JobReady learning platform.
 You help learners who are actively following a structured weekly curriculum to become job-ready in their chosen tech career.
 
@@ -38,22 +54,34 @@ Guidelines:
 
 You are part of the JobReady platform. The platform's mission is to help people become genuinely job-ready through structured, curated, real-world-aligned learning paths."""
 
+    def _get_model(self):
+        if self._model is None:
+            # Re-check key in case configured late
+            key = _get_secret("GEMINI_API_KEY") or _get_secret("gemini_key")
+            if key:
+                genai.configure(api_key=key)
+            self._model = genai.GenerativeModel(
+                model_name='gemini-1.5-flash',
+                system_instruction=self.system_instruction
+            )
+        return self._model
+
     def ask(self, query, context=""):
         """Ask the Study Assistant a question"""
         try:
             full_prompt = f"{context}\n\nLearner Question: {query}" if context else query
-            
-            response = self.model.generate_content(
+            model = self._get_model()
+            response = model.generate_content(
                 full_prompt,
                 generation_config=genai.types.GenerationConfig(
                     temperature=0.7,
                     max_output_tokens=500,
                 )
             )
-            
             return response.text
         except Exception as e:
             return f"Error: {str(e)}"
 
 # Initialize the Study Assistant Agent
 study_assistant_agent = StudyAssistantAgent()
+

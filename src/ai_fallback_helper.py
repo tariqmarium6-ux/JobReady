@@ -3,14 +3,25 @@ import json
 import asyncio
 from google.genai import Client
 
+def _get_secret(key: str) -> str:
+    """Read from env first (local .env), then fall back to st.secrets (Streamlit Cloud)."""
+    val = os.environ.get(key, "")
+    if not val:
+        try:
+            import streamlit as st
+            val = st.secrets.get(key, "")
+        except Exception:
+            pass
+    return val or ""
+
 def get_gemini_client():
-    # 1. Try primary GEMINI_API_KEY from environment first
-    env_key = os.environ.get("GEMINI_API_KEY")
+    # 1. Try primary GEMINI_API_KEY from environment / st.secrets first
+    env_key = _get_secret("GEMINI_API_KEY")
     if env_key:
         return Client(api_key=env_key)
     
     # 2. Extract fallback keys safely from the environment string if primary fails
-    fallback_raw = os.environ.get("GEMINI_FALLBACK_KEYS", "")
+    fallback_raw = _get_secret("GEMINI_FALLBACK_KEYS")
     gemini_keys = [key.strip() for key in fallback_raw.split(",") if key.strip()]
     
     # Try other keys in rotation
