@@ -1781,26 +1781,30 @@ else:
                 context_summary = f"Role: {role_name}. Completed weeks: {list(st.session_state.completed_weeks)}."
                 with st.spinner("Thinking..."):
                     try:
-                        loop = asyncio.new_event_loop()
-                        asyncio.set_event_loop(loop)
-                        full_prompt = f"Context: {context_summary}\nQuery: {query_val}"
-                        runner = st.session_state.get("adk_runner")
-                        if not runner:
-                            from google.adk.runners import InMemoryRunner
-                            runner = InMemoryRunner(agent=study_assistant_agent, app_name="jobready")
-                            st.session_state.adk_runner = runner
-                        loop_session = loop.run_until_complete(runner.session_service.create_session(app_name="jobready", user_id="MARIUM_TARIQ"))
-                        from google.genai import types
-                        msg = types.Content(role="user", parts=[types.Part(text=full_prompt)])
-                        response_container = [""]
-                        async def fetch_res():
-                            async for event in runner.run_async(user_id="MARIUM_TARIQ", session_id=loop_session.id, new_message=msg) or []:
-                                if event.content and event.content.parts:
-                                    for part in event.content.parts:
-                                        if part.text:
-                                            response_container[0] += part.text
-                        loop.run_until_complete(fetch_res())
-                        st.session_state.chat_history.append({"role": "assistant", "text": response_container[0]})
+                        if hasattr(study_assistant_agent, "ask"):
+                            reply = study_assistant_agent.ask(query_val, context_summary)
+                        else:
+                            loop = asyncio.new_event_loop()
+                            asyncio.set_event_loop(loop)
+                            full_prompt = f"Context: {context_summary}\nQuery: {query_val}"
+                            runner = st.session_state.get("adk_runner")
+                            if not runner:
+                                from google.adk.runners import InMemoryRunner
+                                runner = InMemoryRunner(agent=study_assistant_agent, app_name="jobready")
+                                st.session_state.adk_runner = runner
+                            loop_session = loop.run_until_complete(runner.session_service.create_session(app_name="jobready", user_id="MARIUM_TARIQ"))
+                            from google.genai import types
+                            msg = types.Content(role="user", parts=[types.Part(text=full_prompt)])
+                            response_container = [""]
+                            async def fetch_res():
+                                async for event in runner.run_async(user_id="MARIUM_TARIQ", session_id=loop_session.id, new_message=msg) or []:
+                                    if event.content and event.content.parts:
+                                        for part in event.content.parts:
+                                            if part.text:
+                                                response_container[0] += part.text
+                            loop.run_until_complete(fetch_res())
+                            reply = response_container[0]
+                        st.session_state.chat_history.append({"role": "assistant", "text": reply})
                     except Exception as ex:
                         st.session_state.chat_history.append({"role": "assistant", "text": f"Error: {ex}"})
                 st.rerun()
