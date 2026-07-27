@@ -6,7 +6,7 @@ import time
 import httpx
 from dotenv import load_dotenv
 
-# Load environment variables (works locally)
+# Load environment variables (works locally )
 load_dotenv()
 
 def _get_secret(key: str) -> str:
@@ -31,8 +31,9 @@ if not GEMINI_KEYS:
     if multi_keys_raw:
         GEMINI_KEYS = [k.strip() for k in multi_keys_raw.split(",") if k.strip().startswith("AIzaSy")]
 if not GEMINI_KEYS:
-    # Final hardcoded fallback keys
-    GEMINI_KEYS = ["AIzaSyBbsPI0VypOYJtWpHGZIJlhBTyI3sGiCI8", "AIzaSyAZu_fVAbzSGenWipeZmkXnThxS9jD9jPM"]
+    # No Gemini keys configured — Gemini queries will be skipped.
+    # The quiz feature has its own fallback (static quiz) so it still works.
+    GEMINI_KEYS = []
 
 GEMINI_KEY_COOLDOWN = {key: 0.0 for key in GEMINI_KEYS}
 current_engine = "groq-70b"
@@ -55,12 +56,12 @@ async def query_direct_gemini_async(prompt, api_key):
             "temperature": 0.2
         }
     }
-    async with httpx.AsyncClient(timeout=45.0) as client:
+    async with httpx.AsyncClient(timeout=45.0 ) as client:
         res = await client.post(url, json=payload)
         if res.status_code == 429:
-            raise httpx.HTTPStatusError("429 Rate Limit", request=res.request, response=res)
+            raise httpx.HTTPStatusError("429 Rate Limit", request=res.request, response=res )
         if res.status_code == 503:
-            raise httpx.HTTPStatusError("503 Unavailable", request=res.request, response=res)
+            raise httpx.HTTPStatusError("503 Unavailable", request=res.request, response=res )
         res.raise_for_status()
         data = res.json()
         return data["candidates"][0]["content"]["parts"][0]["text"]
@@ -83,10 +84,10 @@ async def query_direct_groq(prompt, model_name, api_key):
         "response_format": {"type": "json_object"},
         "temperature": 0.2
     }
-    async with httpx.AsyncClient(timeout=45.0) as client:
+    async with httpx.AsyncClient(timeout=45.0 ) as client:
         res = await client.post(url, json=payload, headers=headers)
         if res.status_code == 429:
-            raise httpx.HTTPStatusError("429 Rate Limit Exceeded", request=res.request, response=res)
+            raise httpx.HTTPStatusError("429 Rate Limit Exceeded", request=res.request, response=res )
         res.raise_for_status()
         res_json = res.json()
         return res_json["choices"][0]["message"]["content"]
@@ -123,7 +124,7 @@ async def query_llm(prompt):
                 try:
                     return await query_direct_gemini_async(prompt, key)
                 except httpx.HTTPStatusError as e:
-                    if "429" in str(e):
+                    if "429" in str(e ):
                         GEMINI_KEY_COOLDOWN[key] = time.time() + 70
                         continue
                     raise e
@@ -188,7 +189,7 @@ def get_weekly_quiz_sync(role_name: str, week_num: int, week_goal: str, objectiv
                 "response_format": {"type": "json_object"},
                 "temperature": 0.2
             }
-            with httpx.Client(timeout=15.0) as client:
+            with httpx.Client(timeout=15.0 ) as client:
                 res = client.post(url, json=payload, headers=headers)
                 if res.status_code == 200:
                     res_json = res.json()
@@ -250,5 +251,4 @@ def get_weekly_quiz_sync(role_name: str, week_num: int, week_goal: str, objectiv
 async def generate_weekly_quiz(role_name: str, week_num: int, week_goal: str, objectives: list, db_provider) -> dict:
     """Async wrapper for backward compatibility."""
     return get_weekly_quiz_sync(role_name, week_num, week_goal, objectives, db_provider)
-
 
